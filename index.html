@@ -5,33 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather APP - openweatherapp api</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/css/fs.all.min.css">
 </head>
 <body>
     <div id="main_app">
         <!-- top header  -->
         <div class="header">
             <div class="dateAndTime">
-                <span class='currentDay'>Monday</span>
-                <span class="currentTime">10:40 PM</span>
+                <!-- <span class='currentDay' id="toDay">Monday</span> -->
+                <span class="currentTime" id="currentTime"></span>
+                <div id="toDay"></div>
             </div>
             <div class="location">
-                KUSHTIA
+                <div class="setLocation" id="setLocation">DEFAULT !</div>
+                <img class="img" src="img/location.png" alt=""> 
+                <form action="" id="searchForm">
+                    <input type="text" name="location" autofocus id="searchInput">
+                </form>
             </div>
         </div>
 
         <!-- main body  -->
         <div class="main-body">
-            <div class="body-img">
-                <img src="" alt="">
-            </div>
             <div class="body-info">
+
                 <div class="main-temp">
+                    <div class="left">
+                        <div id="temperature"></div>
+                        <div class="minmax" id="TempMinMax">
+                            
+                        </div>
+                    </div>
+
                     
-                </div>
-                <div class="other-temp">
+                    <div class="right">
+                        <div class="sunSetRise">
+                            <div class="sunRise" id="sunRise">
+                                
+                            </div>
+                            <div class="sunSet" id="sunSet">
+
+                               
+                            </div>
+                        </div>
+                        <div class="nextHourWeather">
+
+                        </div>
+                    </div>
 
                 </div>
+
+                <div class="other-temp">
+                    <div class="middle">
+                        <div class="skyCondition" id="skyCondition">
+                            
+                        </div>
+                        
+                        <div class="windSpeed" id="windMitter">
+                            
+                        </div>
+
+                        <div class="seaLevel">
+                            <div class="h6">Sea Level: </div>
+                            <!-- <div class="p">1200 </div> -->
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
+
+
         </div>
 
         <!-- footer  -->
@@ -45,9 +88,70 @@
                 </div>
                 <div class="footer-temp">170/4</div>
             </div>
+            <div class="footer-item">
+                <div class="footer-title">
+                    SAT
+                </div>
+                <div class="footer-img">
+
+                </div>
+                <div class="footer-temp">170/4</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-title">
+                    SAT
+                </div>
+                <div class="footer-img">
+
+                </div>
+                <div class="footer-temp">170/4</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-title">
+                    SAT
+                </div>
+                <div class="footer-img">
+
+                </div>
+                <div class="footer-temp">170/4</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-title">
+                    SAT
+                </div>
+                <div class="footer-img">
+
+                </div>
+                <div class="footer-temp">170/4</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-title">
+                    SAT
+                </div>
+                <div class="footer-img">
+
+                </div>
+                <div class="footer-temp">170/4</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-title">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="footer-img">
+
+                </div>
+                <div class="footer-temp">170/4</div>
+            </div>
         </div>
     </div>
-
+    <!-- <script src="geoCountry.js"></script> -->
+    <!-- <script src="cities.js"></script> -->
+    <!-- <script src="state.js"></script> -->
+    
+    <!-- <script src="countries.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="asset/js/fa.all.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 </html>
