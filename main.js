@@ -10,6 +10,7 @@ const skyConditionElement = document.getElementById("skyCondition");
 const windMitterElement = document.getElementById("windMitter");
 const sunRiseElement = document.getElementById('sunRise')
 const sunSetElement = document.getElementById("sunSet");
+const nextHourWeatherElement = document.getElementById('nextHourWeather');
 // const descriptionElement = document.getElementById('description');
 
 const todayElement = document.getElementById("toDay");
@@ -1676,7 +1677,7 @@ const forceCat =
 };
 
 
-function getWeather(city) {
+async function getWeather(city) {
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city??"dhaka"}&APPID=2acfc6c74c2396283f1bf3b656fc902f`)
     .then((response)=>response.data)
     .then((weather)=>{
@@ -1726,6 +1727,8 @@ function getWeather(city) {
         `;
         sunSetElement.innerHTML = sunSet;
 
+        getWeatherNextFiveDays(city);
+
     })
     .catch((error)=>{
         console.log(error);
@@ -1736,7 +1739,7 @@ function getWeather(city) {
     // weatherIconElement.src = `https://openweathermap.org/img/w/${weatherObj.weather[0].icon}.png`;
 
 }
-// getWeather();
+getWeather();
 
 
 // get current user location 
@@ -1762,13 +1765,37 @@ function getWeather(city) {
 
 
 //get weather from openweathermap for next 5 days
-function getWeatherNextFiveDays() {
+async function getWeatherNextFiveDays(city) {
     // await getCurrentUserLatLog();
     // .then()
-    axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=dhaka,bangladesh&appid=2acfc6c74c2396283f1bf3b656fc902f`)
+    axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city??"dhaka"}&appid=2acfc6c74c2396283f1bf3b656fc902f`)
     .then((response)=>response.data)
     .then((weather)=>{
-        console.log(weather);
+        // console.log(weather);
+        let nextDayWeather ='';
+        weather.list.forEach((fw)=>{
+            let currentDate = new Date(); //today
+            let dtt = fw.dt * 1000; //convert UTC to millicound
+            let fwDate = new Date(dtt); //current date corespondint millicound
+
+            let tempCelcious = fw.main.temp - 275.14;
+        
+            if (fwDate.getDate() == currentDate.getDate()) {
+                nextDayWeather += 
+                `
+                <div class="weatherItem">
+                    <div class="temp">${ tempCelcious.toFixed(2) }<sup>°C</sup></div>
+                    <div>
+                        <img src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png" alt="">
+                        <div class="time">${fwDate.getHours() }:${fwDate.getMinutes()}</div>
+                    </div>
+                </div> 
+                `;
+            }
+
+        })
+        nextHourWeatherElement.innerHTML = nextDayWeather;
+
     })
     .catch((error)=>{
         console.log(error);
@@ -1781,9 +1808,8 @@ function getWeatherNextFiveDays() {
     //     }
     // })
 }
-// getWeatherNextFiveDays();
 
-forceCat.list.forEach((fw)=>{
+forceCat.list.forEach((fw, fwi)=>{
     let currentDate = new Date();  //today
     // let utcstring = currentDate.toUTCString();
     // let unixTimestamps = Date.parse(utcstring);
@@ -1794,8 +1820,8 @@ forceCat.list.forEach((fw)=>{
     let nttDate = new Date(dtt) // get current date from millisecound
 
     // console.log(nttDate.getDate());
-    if (nttDate.getDate() == currentDate.getDate()  ) {
-        console.log(fw);
+    if (nttDate.getDate() == currentDate.getDate()) {
+        console.log();
     }
     
     // console.log(fw);
