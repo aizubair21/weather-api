@@ -11,6 +11,12 @@ const windMitterElement = document.getElementById("windMitter");
 const sunRiseElement = document.getElementById('sunRise')
 const sunSetElement = document.getElementById("sunSet");
 const nextHourWeatherElement = document.getElementById('nextHourWeather');
+const footerElement = document.getElementById("footer");
+const todate = new Date();
+let nextFourDay = [];
+let nextWeatherInfo = '';
+let indexCount = [];
+let tempArray = [];
 // const descriptionElement = document.getElementById('description');
 
 const todayElement = document.getElementById("toDay");
@@ -19,7 +25,7 @@ const currentTimeElement = document.getElementById('currentTime');
 const searchForm = document.getElementById('searchForm');
 let currentUserLat, currentUserLong;
 
-let weakNames = ['Sunday', 'Monday', 'Twesday', 'Wednesday', 'Thursday', 'Friday','Satarday' ];
+let weakNames = ['Sun', 'Mon', 'Twes', 'Wednes', 'Thurs', 'Fri','Sat'];
 const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 setInterval(() => {
@@ -119,7 +125,6 @@ const weatherObj =
     "name": "Kushtia",
     "cod": 200
 };
-
 
 const forceCat = 
 {
@@ -1687,25 +1692,36 @@ async function getWeather(city) {
         locationElement.innerHTML = weather.name;
         searchInputElement.value = weather.name;
         let temperatureCelcious = weather.main.temp - 275.14;
-        temperatureElement.innerHTML = temperatureCelcious.toFixed()+`<sup>°C</sup>`;
+        temperatureElement.innerHTML = temperatureCelcious.toFixed(2)+`<sup style="font-size:12px;">°C</sup>`;
         let tempMinCelcious = weather.main.temp_min - 275.14;
         let tempMaxCelcious = weather.main.temp_max - 275.14;
         let minMax =
-        `<div class="max" title="todays maximx temperature"> <i class="fas fa-caret-up"></i> ${tempMaxCelcious.toFixed()} <sup>°C</sup> </div>
-        <div class="min" title="todays minimum tempereature"> <i class="fas fa-caret-down"></i> ${tempMinCelcious.toFixed()} <sup>°C</sup> </div>
+        `<div class="max" title="todays maximx temperature"> <i class="fas fa-caret-up"></i> ${tempMaxCelcious.toFixed(1)} <sup style="font-size:12px">°C</sup> </div>
+        <div class="min" title="todays minimum tempereature"> <i class="fas fa-caret-down"></i> ${tempMinCelcious.toFixed(1)} <sup style="font-size:12px">°C</sup> </div>
         `;
 
         tempMinMaxElement.innerHTML = minMax;
         skyConditionElement.innerHTML = 
         `
-        <h6 class="h6">Sky : ${weather.weather[0].main} <span style="font-size:9px">(${weather.clouds.all}% cloud)</span> </h6>
-        <p class="p"> ${weather.weather[0].description} !</p>
+        <div style="display:flex">
+
+            <div style="text-align:center">
+            <p class="p">${weather.weather[0].main}</p>
+            <p class="p"> (${weather.clouds.all}% cloud)</p>
+            <div id="mainImg">
+                
+            </div>
+            </div>
+        
+        </div>
         `;
         let windSpeedMiles = weather.wind.speed * 3.6;
         windMitterElement.innerHTML =
         `
-        <div class="h6">Wind Speed :</div>
         <span class="windMitter"> <i class="fas fa-caret-right"></i> ${windSpeedMiles.toFixed(3)} Kh/H </span>
+        <div class="h6">
+            <img width="25"  src="img/wind.png">
+        </div>
         `;
 
         let sunRiseMillisecound = weather.sys.sunrise * 1000;
@@ -1726,12 +1742,12 @@ async function getWeather(city) {
 
         `;
         sunSetElement.innerHTML = sunSet;
-
-        getWeatherNextFiveDays(city);
+        getWeatherNextFiveHours(city);
 
     })
     .catch((error)=>{
-        console.log(error);
+        // console.log(error);
+        alert("Location Not Fount! Please, Try again with correct name.")
     })
     // console.log(weatherObj.main);
    
@@ -1761,11 +1777,8 @@ getWeather();
 // getCurrentUserLatLog()
 
 
-
-
-
 //get weather from openweathermap for next 5 days
-async function getWeatherNextFiveDays(city) {
+async function getWeatherNextFiveHours(city) {
     // await getCurrentUserLatLog();
     // .then()
     axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city??"dhaka"}&appid=2acfc6c74c2396283f1bf3b656fc902f`)
@@ -1781,20 +1794,25 @@ async function getWeatherNextFiveDays(city) {
             let tempCelcious = fw.main.temp - 275.14;
         
             if (fwDate.getDate() == currentDate.getDate()) {
+                // console.log(fw);
                 nextDayWeather += 
                 `
-                <div class="weatherItem">
-                    <div class="temp">${ tempCelcious.toFixed(2) }<sup>°C</sup></div>
-                    <div>
-                        <img src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png" alt="">
-                        <div class="time">${fwDate.getHours() }:${fwDate.getMinutes()}</div>
-                    </div>
-                </div> 
+                    <div class="weatherItem">
+                        <div class="temp">${ tempCelcious.toFixed(2) }<sup class="sup">°C</sup></div>
+                        <div>
+                            <img src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png" alt="">
+                            <div class="time">${fwDate.getHours() }:${fwDate.getMinutes()}</div>
+                        </div>
+                    </div> 
+                
                 `;
+                document.getElementById('mainImg').innerHTML = `<img  src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png">`;
             }
-
         })
+        // .setAttribute('src', "https://openweathermap.org/img/w/${fw.weather[0].icon}.png");
         nextHourWeatherElement.innerHTML = nextDayWeather;
+        nextWeatherInfo = weather;
+        setWeatherNextFourDays()
 
     })
     .catch((error)=>{
@@ -1809,22 +1827,123 @@ async function getWeatherNextFiveDays(city) {
     // })
 }
 
-forceCat.list.forEach((fw, fwi)=>{
-    let currentDate = new Date();  //today
-    // let utcstring = currentDate.toUTCString();
-    // let unixTimestamps = Date.parse(utcstring);
-    // let utcTime = new Date(unixTimestapns);
-    // console.log(currentDate.getDate());
 
-    let dtt = fw.dt * 1000; //convert UTC to millisecound 
-    let nttDate = new Date(dtt) // get current date from millisecound
 
-    // console.log(nttDate.getDate());
-    if (nttDate.getDate() == currentDate.getDate()) {
-        console.log();
-    }
+let currentDate = new Date();  //today
+// let utcstring = currentDate.toUTCString();
+// let unixTimestamps = Date.parse(utcstring);
+// let utcTime = new Date(unixTimestapns);
+// console.log(currentDate.getDate());
+
+let footeri = '';  
+async function setWeatherNextFourDays(){
+    //call nextDay funciton 
+    getDay();
+
+    // get next four days weather data
+    makeNestWatherArray();
+    // tempArray = [];
+    // for (let index = currentDate.getDate();; index++) {
+    //     indexCount.push(index);
+
+    //     if (index > 31) {
+    //         index = 1;
+    //     }
+    //     if (indexCount.length > 7) {
+    //         break;
+    //     }
+    //     // console.log(index);
+    //     nextWeatherInfo.list.forEach((fw) => {
+        
+    //         let dtt = fw.dt * 1000; //convert UTC to millisecound 
+    //         let nttDate = new Date(dtt) // get current date from millisecound
+    //         // console.log(nttDate.getDate());
+    //         if (nttDate.getDate() == index) {
+    //             // console.log(fw.dt_txt);
+    //             tempArray[index]=fw;
+    //         }
+
+    //     })
+    // };
+
+    // console.log(tempArray);
+
+    // set next four days weather data 
+
+    footerElement.innerHTML = "";
+    tempArray.forEach((nw, index)=>{
+        let tempCelcious = nw.main.temp - 275.14;
+        footeri +=
+        `
+        <div class="footer-item">
+        
+            <div class="footer-temp">${tempCelcious.toFixed(1)} <sup style="font-size:12px">c</sup> </div>
+            
+            <div class="footer-img">
+                <img width="25" height="25" src="https://openweathermap.org/img/w/${nw.weather[0].icon}.png">
+            </div>
+
+            <div class="footer-title">
+                ${nextFourDay[--index]?? "next"}
+            </div>
+
+        </div>
+        `;
+    })
+    // console.log("i");
+    footerElement.innerHTML = footeri;
+    footeri = '';
+    tempArray = [];
+    indexCount = [];
+    // console.log(tempArray);
+}
+
+//get coresponding next few days
+async function getDay(){
     
-    // console.log(fw);
-})
+    // const today = `${todate.getMonth()+1}/${todate.getDate()} ${todate.getHours()}:${todate.getMinutes()}`;
+
+    for (let d = todate.getDay();; d++) {
+        if(d > 6){
+            d = 0;
+        }
+        if (nextFourDay.length > 6) {
+            break;
+        }
+        let weakDay = weakNames[d];
+        nextFourDay.push(weakDay);
+        // console.log(nextFourDay);
+    };
+    // console.log(nextFourDay[0]);
+}
+
+//get coresponding few days weather 
+async function makeNestWatherArray(){
+    // tempArray = [];
+    for (let index = currentDate.getDate();; index++) {
+        indexCount.push(index);
+
+        if (index > 31) {
+            index = 1;
+        }
+        if (indexCount.length > 7) {
+            break;
+        }
+        // console.log(index);
+        nextWeatherInfo.list.forEach((fw) => {
+        
+            let dtt = fw.dt * 1000; //convert UTC to millisecound 
+            let nttDate = new Date(dtt) // get current date from millisecound
+            // console.log(nttDate.getDate());
+            if (nttDate.getDate() == index) {
+                // console.log(fw.dt_txt);
+                tempArray[index]=fw;
+            }
+
+        })
+    };
+
+    // console.log(tempArray);
+}
 
 });

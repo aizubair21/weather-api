@@ -92,13 +92,13 @@ body{
                 /* box-shadow: inset 0px 0px 15px rgba(0,0,0,0.4); */
                 color: white!important;
                 #temperature{
-                    font-size: 40px;
+                    font-size: 30px;
                 }
 
                 .left{
                     padding: 10px;
                     /* border-right: 1px solid #ffffffa1; */
-                    width: 100px;
+                    width: 150px;
                     background-color: #072130;
                     .minmax{
                         width: 100%;
@@ -107,7 +107,7 @@ body{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        font-size: 12px;
+                        font-size: 10px;
                         .fa-caret-up{
                             color:rgb(238, 69, 69);
                         }
@@ -119,7 +119,7 @@ body{
                
 
                 .right{
-                    padding: 4px;
+                    padding: 4px 8px;
                     flex: 1;
                     .sunSetRise{
                         position: relative;
@@ -138,7 +138,7 @@ body{
                         transform: translate(-50%, -50%);
                         width: 70%;
                         border-radius: 50%;
-                        height: 150px;
+                        height: 90px;
                         border-color: #fff;
                         border-style: dashed;
                         border-width: 2px 0px 0px 0px;
@@ -152,14 +152,16 @@ body{
                         .middle{
                             padding: 1px;
                             display: flex;
-                            align-items: start;
-                            justify-content: space-evenly;
-                            border-right: 1px solid #ffffffa1;
+                            align-items: center;
+                            justify-content: space-between;
+                            /* border-right: 1px solid #ffffffa1; */
         
                             .skyCondition{
-                                text-align:left;
+                                /* text-align:left; */
                                 padding: 4px;
-                                border-bottom: 1px solid #ffffffa1;
+                                margin-bottom: 3px;
+                                background-color: #f5f1f121;
+                                /* border: 1px solid #ffffffa1; */
                                 .h6{
                                     padding: 0px 3px;
                                     font-size: 15px;
@@ -171,8 +173,9 @@ body{
                             
                             .windSpeed{
                                 padding: 8px 4px;
-                                text-align: left;
-                                border-bottom: 1px solid #ffffffa1;;
+                                text-align: center;
+                                background-color: #f5f1f121;
+                                /* border-bottom: 1px solid #ffffffa1;; */
                                 .windMitter{
                                     font-size: 12px;
                                 }
@@ -241,6 +244,9 @@ body{
                     }
                     .temp{
                         font-size: 13px;
+                        .sup{
+                            font-size: 11px;
+                        }
                     }
                 }
             }
@@ -272,11 +278,14 @@ body{
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-
+            color:#fff;
             .footer-title{
                 font-size: 18px;
             }
             .footer-temp{
+                font-size: 12px;
+            }
+            .footer-title{
                 font-size: 12px;
             }
         }
