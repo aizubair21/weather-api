@@ -17,13 +17,21 @@
     <!-- asside left  -->
     <section id="asside_left">
         <div class="title asside_tab">
+            <button class="tab_button">
+                UI Color
+            </button>
             <button class="tab_button tab_button_active">
                 Settings
                 <!-- setting icon fonrawesome  -->
             </button>
-            <button class="tab_button">
-                Ui
-            </button>
+        </div>
+
+        <div class="settings" id="settings">
+
+        </div>
+
+        <div class="settings" id="uiColor">
+
         </div>
     </section>
 
@@ -100,7 +108,7 @@
                 <div id="toDay"></div>
             </div>
             <div class="location">
-                <button class="setLocation" id="setLocation">DEFAULT !</button>
+                <button class="setLocation " id="setLocation">DEFAULT !</button>
                 <!-- <img class="img" src="img/location.png" alt=""> -->
                 <!-- <form action="" id="searchForm">
                     <input type="text" name="location" autofocus id="searchInput">
@@ -302,13 +310,17 @@
 
     <!-- asside right  -->
     <section id="asside_right">
-        <div class="title asside_tab">
-            <div class="btn text-light">
-                <i class="fas fa-search  mr-3"></i> Recent Search
+        <div class="right_tab">
+            <div class="right_tab_active active_on_left"></div>
+            <div class="btn right_tab_btn text-light  tab_active d-inline-block">
+                <i class="fas fa-search  mr-3"></i> Search
+            </div>
+            <div class="btn right_tab_btn text-light    d-inline-block">
+                <i class="fas fa-check  mr-3"></i> Activity
             </div>
         </div>
 
-        <div class="recent_searches" id="recent_search">
+        <div class="right_tab_content recent_searches" id="recentSearch">
 
             <div class="search search_active">
                 <div class="search_sl">01</div>
@@ -329,6 +341,7 @@
 
                 <div class="search_del"> - </div>
             </div>
+
             <div class="search ">
                 <div class="search_sl">01</div>
                 <div class="search_title">Bhola</div>
@@ -347,6 +360,7 @@
                 </label>
                 <div class="search_del"> - </div>
             </div>
+
             <div class="search ">
                 <div class="search_sl">01</div>
                 <div class="search_title">Bhola</div>
@@ -367,13 +381,7 @@
             </div>
         </div>
 
-        <div class="title asside_tab mt-3">
-            <div class="btn text-light">
-                <i class="fas fa-check  mr-3"></i> Your Activity
-            </div>
-        </div>
-
-        <div class="activities">
+        <div class="right_tab_content activities">
 
             <div class="activity activity_head">
                 <div class="activity_date">Date</div>
@@ -413,6 +421,7 @@
 
 
     <!-- <script src="geoCountry.js"></script> -->
+    <script src="weather.js"></script>
     <script src="asset/js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
     <script src="asset/js/fa.all.min.js"></script>
@@ -422,7 +431,6 @@
     <!-- <script src="countries.js"></script> -->
     <!-- <script src="cities.js"></script> -->
     <script src="function.js"></script>
-    <script src="weather.js"></script>
     <!-- <script src="state.js"></script> -->
     <!-- <script src="test.js"></script> -->
     <script>

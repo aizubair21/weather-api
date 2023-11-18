@@ -1,5 +1,4 @@
-console.log("dom Loaded");
-
+// console.log("dom Loaded");
 // run a function when document fully loded
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -12,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const locationSubBtn = document.getElementById("locationSubBtn");
     const locationForm = document.getElementById('user_location');
     const locationCheckBtn = document.getElementById('locationCheckBtn')
+    // const setLocationBtn = document.getElementById('setLocation')
+
 
     // const tempMinMaxElement = document.getElementById('TempMinMax');
     // const skyConditionElement = document.getElementById("skyCondition");
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let otherDayWeatherList = '';
     let indexCount = [];
     let tempArray = [];
+    let searchArray = [];
     // const descriptionElement = document.getElementById('description');
 
     const todayElement = document.getElementById("toDay");
@@ -1612,10 +1614,17 @@ document.addEventListener("DOMContentLoaded", () => {
             .then((weather) => {
 
                 // console.log(weather);
-
                 setLocationBtn.innerHTML = weather.name;
                 // searchInputElement.value = weather.name;
                 let temperatureCelcious = weather.main.temp - 275.14;
+                let localStorageObject = {
+                    keyword: weather.name,
+                    search_date: todate.toDateString(),
+                    search_time: todate.toLocaleTimeString(),
+                    temp: temperatureCelcious,
+                    weather: weather.weather,
+                };
+                localStorageFunction(localStorageObject);
                 temperatureElement.innerHTML =
                     `
             <div id="mainImg"></div>
@@ -2016,7 +2025,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     let ifBd = "";
                     res.data.forEach(state => {
                         if (countryCode == "BD") {
-                            console.log(state);
+                            // console.log(state);
                             // console.log(countryCode, res.data);
                             if (state.iso2.length != 1) {
                                 //get name without  'District' from state.name
@@ -2058,7 +2067,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
                 .then(res => {
                     let htmlOption = "";
-                    console.log(res.data[0]);
+                    // console.log(res.data[0]);
                     res.data.forEach(ct => {
                         htmlOption +=
                             `
@@ -2072,8 +2081,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
         })
     }
-
-    // getCountryStateCity();
 
 
     // location submit btn click 
@@ -2089,6 +2096,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //if click location name, it open location select form
     setLocationBtn.addEventListener("click", () => {
+        //get the ::after by the coresponding target of setLocation id 
+        // const afterTarget = document.querySelector('.setLocation::after');
+        if (setLocationBtn.classList.contains('open')) {
+            setLocationBtn.classList.remove('open');
+        } else {
+            setLocationBtn.classList.add('open');
+        }
+
         if (locationForm.classList.contains('user_location_active')) {
             locationForm.classList.remove('user_location_active')
         } else {
@@ -2115,5 +2130,28 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-    // console.log("script Loaded");
+    //local storege function 
+    async function localStorageFunction(searchData = null) {
+
+        if (!localStorage.getItem('search')) {
+            searchArray.push(searchData);
+            localStorage.setItem('search', JSON.stringify(searchArray));
+        } else {
+            let haveLareadyInseted = false;
+            searchArray = await JSON.parse(localStorage.getItem('search'));
+            searchArray.forEach(rd => {
+                if (rd.keyword == searchData.keyword) {
+                    haveLareadyInseted = true;
+                }
+            });
+            if (searchData != null && !haveLareadyInseted) {
+                searchArray.push(searchData);
+                localStorage.setItem('search', JSON.stringify(searchArray));
+            }
+        }
+        // console.log(searchData);
+        // console.log(JSON.parse(localStorage.getItem('search')));
+    }
+
+
 });

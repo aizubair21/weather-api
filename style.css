@@ -54,7 +54,6 @@ body {
     margin: 8px;
     padding: 15px;
 
-
 }
 
 #asside_right {
@@ -65,6 +64,42 @@ body {
     border-radius: 12px;
     margin: 8px;
     padding: 15px;
+
+    .right_tab {
+        width: 230px;
+        height: 40px;
+        margin: 8px auto;
+        border: 2px solid #19875420;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        /* padding: 3px; */
+
+        .right_tab_active {
+            position: absolute;
+            top: 0px;
+            width: 115px;
+            height: 36px;
+            background-color: #0079DF;
+            z-index: -1;
+            border-radius: 25px;
+            transition: all linear .3s;
+        }
+
+        .active_on_left {
+            left: 0 !important;
+            transition: all linear .3s;
+        }
+
+        .active_on_right {
+            right: 0 !important;
+            transition: all linear .3s;
+        }
+
+    }
 
 
     .recent_searches {
@@ -173,7 +208,7 @@ body {
             align-items: center;
             font-size: 11px;
             margin-bottom: 3px;
-            padding: 5px;
+            padding: 5px 8px;
 
             .activity_date,
             .activity_in_time,
@@ -183,7 +218,7 @@ body {
             }
 
             .activity_del {
-                padding: 2px 4px;
+                padding: 2px 6px;
             }
 
             /* get the even child of activity class  */
@@ -290,7 +325,8 @@ body {
                 font-size: 13px !important;
             }
 
-            .setLocation {
+            .setLocation,
+            .open {
                 padding: 8px 15px;
                 margin: 2px;
                 color: #fff;
@@ -315,7 +351,22 @@ body {
                     border-style: solid;
                     border-width: 2px;
                     border-color: transparent white white transparent;
+                    transition: all linear .3s;
                 }
+            }
+
+            .open::after {
+                content: "";
+                position: absolute;
+                top: calc(50% - 0px);
+                right: 15px;
+                width: 8px;
+                height: 8px;
+                transform: translateY(-50%) rotate(45deg);
+                border-style: solid;
+                border-width: 2px;
+                border-color: white transparent transparent white;
+                transition: all linear .3s;
             }
 
             #settings_icon {
