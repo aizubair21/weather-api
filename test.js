@@ -1,140 +1,8 @@
-// run a function when document fully loded
-document.addEventListener("DOMContentLoaded", () => {
-
-const apiKey = '2acfc6c74c2396283f1bf3b656fc902f';
-const searchInputElement = document.getElementById('searchInput');
-const locationElement = document.getElementById('setLocation');
-const temperatureElement = document.getElementById('temperature');
-// const tempMinMaxElement = document.getElementById('TempMinMax');
-// const skyConditionElement = document.getElementById("skyCondition");
-const windMitterElement = document.getElementById("windMitter");
-const sunRiseElement = document.getElementById('sunRise')
-const sunSetElement = document.getElementById("sunSet");
-const nextHourWeatherElement = document.getElementById('nextHourWeather');
-const footerElement = document.getElementById("footer");
-const sunOrMon = document.getElementById('sun');
-
-const todate = new Date();
-let nextFourDay = [];
-let nextWeatherInfo = '';
-let indexCount = [];
-let tempArray = [];
-// const descriptionElement = document.getElementById('description');
-
-const todayElement = document.getElementById("toDay");
-const currentTimeElement = document.getElementById('currentTime');
-// const locationDropdownElement = document.getElementById('locationDropdown');
-const searchForm = document.getElementById('searchForm');
-let currentUserLat, currentUserLong;
-
-let weakNames = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri','Sat'];
-const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-setInterval(() => {
-}, 1000);
-
-function animation() {
-    
-    let date = new Date();
-    todayElement.innerHTML = date.toDateString();
-    todayElement.style.fontSize = 12+"px";
-    currentTimeElement.innerHTML = date.toLocaleTimeString();
-    requestAnimationFrame(animation)
-}
-animation();
-
-
-searchForm.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    let getSearchValue = e.target.searchInput.value;
-    if (getSearchValue != "") {
-        getWeather(getSearchValue);
-    }
-
-    // console.log(e.target.locationInput.value);
-})
-
-// Event listener for the search button
-// searchButton.addEventListener('click', () => {
-//     const location = searchInput.value;
-//     if (location) {
-//         fetchWeatherData(location);
-//     }
-// });
-
-// Function to fetch weather data from the API
-// function fetchWeatherData(location) {
-//     const apiUrl = "api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=2acfc6c74c2396283f1bf3b656fc902f";
-
-//     fetch(apiUrl)
-//         .then((response) => response.json())
-//         .then((data) => {
-//             locationElement.textContent = `Location: ${data.name}, ${data.sys.country}`;
-//             temperatureElement.textContent = `Temperature: ${data.main.temp}°C`;
-//             descriptionElement.textContent = `Description: ${data.weather[0].description}`;
-//             const iconCode = data.weather[0].icon;
-//             weatherIconElement.src = `https://openweathermap.org/img/w/${iconCode}.png`;
-//         })
-//         .catch((error) => {
-//             console.error('Error fetching weather data:', error);
-//             locationElement.textContent = 'Location not found';
-//         });
-// }
-// fetchWeatherData
-
-const weatherObj = 
-{
-    "coord": {
-        "lon": 89.1221,
-        "lat": 23.9011
-    },
-    "weather": [
-        {
-            "id": 803,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04d"
-        }
-    ],
-    "base": "stations",
-    "main": {
-        "temp": 305.06,
-        "feels_like": 312.06,
-        "temp_min": 305.06,
-        "temp_max": 305.06,
-        "pressure": 1003,
-        "humidity": 68,
-        "sea_level": 1003,
-        "grnd_level": 1001
-    },
-    "visibility": 10000,
-    "wind": {
-        "speed": 2.06,
-        "deg": 197,
-        "gust": 2.25
-    },
-    "clouds": {
-        "all": 83
-    },
-    "dt": 1695718708,
-    "sys": {
-        "country": "BD",
-        "sunrise": 1695685995,
-        "sunset": 1695729413
-    },
-    "timezone": 21600,
-    "id": 1185191,
-    "name": "Kushtia",
-    "cod": 200
-};
-
-const forceCat = 
-{
+const testWet = {
     "cod": "200",
     "message": 0,
     "cnt": 40,
-    "list": [
-        {
+    "list": [{
             "dt": 1695988800,
             "main": {
                 "temp": 305.57,
@@ -147,14 +15,12 @@ const forceCat =
                 "humidity": 59,
                 "temp_kf": 1.13
             },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "broken clouds",
-                    "icon": "04n"
-                }
-            ],
+            "weather": [{
+                "id": 803,
+                "main": "Clouds",
+                "description": "broken clouds",
+                "icon": "04n"
+            }],
             "clouds": {
                 "all": 83
             },
@@ -183,14 +49,12 @@ const forceCat =
                 "humidity": 71,
                 "temp_kf": 1.23
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 91
             },
@@ -222,14 +86,12 @@ const forceCat =
                 "humidity": 84,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 99
             },
@@ -261,14 +123,12 @@ const forceCat =
                 "humidity": 86,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 98
             },
@@ -300,14 +160,12 @@ const forceCat =
                 "humidity": 90,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 99
             },
@@ -339,14 +197,12 @@ const forceCat =
                 "humidity": 80,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -378,14 +234,12 @@ const forceCat =
                 "humidity": 66,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 98
             },
@@ -417,14 +271,12 @@ const forceCat =
                 "humidity": 63,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 95
             },
@@ -456,14 +308,12 @@ const forceCat =
                 "humidity": 74,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 75
             },
@@ -495,14 +345,12 @@ const forceCat =
                 "humidity": 80,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 69
             },
@@ -534,14 +382,12 @@ const forceCat =
                 "humidity": 85,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "broken clouds",
-                    "icon": "04n"
-                }
-            ],
+            "weather": [{
+                "id": 803,
+                "main": "Clouds",
+                "description": "broken clouds",
+                "icon": "04n"
+            }],
             "clouds": {
                 "all": 82
             },
@@ -570,14 +416,12 @@ const forceCat =
                 "humidity": 88,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 99
             },
@@ -609,14 +453,12 @@ const forceCat =
                 "humidity": 89,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "overcast clouds",
-                    "icon": "04d"
-                }
-            ],
+            "weather": [{
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }],
             "clouds": {
                 "all": 96
             },
@@ -645,14 +487,12 @@ const forceCat =
                 "humidity": 67,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "scattered clouds",
-                    "icon": "03d"
-                }
-            ],
+            "weather": [{
+                "id": 802,
+                "main": "Clouds",
+                "description": "scattered clouds",
+                "icon": "03d"
+            }],
             "clouds": {
                 "all": 31
             },
@@ -681,14 +521,12 @@ const forceCat =
                 "humidity": 56,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 802,
-                    "main": "Clouds",
-                    "description": "scattered clouds",
-                    "icon": "03d"
-                }
-            ],
+            "weather": [{
+                "id": 802,
+                "main": "Clouds",
+                "description": "scattered clouds",
+                "icon": "03d"
+            }],
             "clouds": {
                 "all": 26
             },
@@ -717,14 +555,12 @@ const forceCat =
                 "humidity": 61,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 71
             },
@@ -756,14 +592,12 @@ const forceCat =
                 "humidity": 76,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 86
             },
@@ -795,14 +629,12 @@ const forceCat =
                 "humidity": 82,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -834,14 +666,12 @@ const forceCat =
                 "humidity": 89,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "overcast clouds",
-                    "icon": "04n"
-                }
-            ],
+            "weather": [{
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04n"
+            }],
             "clouds": {
                 "all": 91
             },
@@ -870,14 +700,12 @@ const forceCat =
                 "humidity": 89,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "broken clouds",
-                    "icon": "04n"
-                }
-            ],
+            "weather": [{
+                "id": 803,
+                "main": "Clouds",
+                "description": "broken clouds",
+                "icon": "04n"
+            }],
             "clouds": {
                 "all": 80
             },
@@ -906,14 +734,12 @@ const forceCat =
                 "humidity": 87,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "overcast clouds",
-                    "icon": "04d"
-                }
-            ],
+            "weather": [{
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }],
             "clouds": {
                 "all": 90
             },
@@ -942,14 +768,12 @@ const forceCat =
                 "humidity": 81,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 804,
-                    "main": "Clouds",
-                    "description": "overcast clouds",
-                    "icon": "04d"
-                }
-            ],
+            "weather": [{
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }],
             "clouds": {
                 "all": 92
             },
@@ -978,14 +802,12 @@ const forceCat =
                 "humidity": 90,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 96
             },
@@ -1017,14 +839,12 @@ const forceCat =
                 "humidity": 88,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1056,14 +876,12 @@ const forceCat =
                 "humidity": 89,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 500,
-                    "main": "Rain",
-                    "description": "light rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1095,14 +913,12 @@ const forceCat =
                 "humidity": 97,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 502,
-                    "main": "Rain",
-                    "description": "heavy intensity rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 502,
+                "main": "Rain",
+                "description": "heavy intensity rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1134,14 +950,12 @@ const forceCat =
                 "humidity": 98,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 502,
-                    "main": "Rain",
-                    "description": "heavy intensity rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 502,
+                "main": "Rain",
+                "description": "heavy intensity rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1173,14 +987,12 @@ const forceCat =
                 "humidity": 97,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 503,
-                    "main": "Rain",
-                    "description": "very heavy rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 503,
+                "main": "Rain",
+                "description": "very heavy rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1212,14 +1024,12 @@ const forceCat =
                 "humidity": 96,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 502,
-                    "main": "Rain",
-                    "description": "heavy intensity rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 502,
+                "main": "Rain",
+                "description": "heavy intensity rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1251,14 +1061,12 @@ const forceCat =
                 "humidity": 94,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1290,14 +1098,12 @@ const forceCat =
                 "humidity": 94,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 502,
-                    "main": "Rain",
-                    "description": "heavy intensity rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 502,
+                "main": "Rain",
+                "description": "heavy intensity rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1329,14 +1135,12 @@ const forceCat =
                 "humidity": 94,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 502,
-                    "main": "Rain",
-                    "description": "heavy intensity rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 502,
+                "main": "Rain",
+                "description": "heavy intensity rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1368,14 +1172,12 @@ const forceCat =
                 "humidity": 92,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1407,14 +1209,12 @@ const forceCat =
                 "humidity": 93,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1446,14 +1246,12 @@ const forceCat =
                 "humidity": 93,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1485,14 +1283,12 @@ const forceCat =
                 "humidity": 93,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10n"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10n"
+            }],
             "clouds": {
                 "all": 99
             },
@@ -1524,14 +1320,12 @@ const forceCat =
                 "humidity": 95,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 99
             },
@@ -1563,14 +1357,12 @@ const forceCat =
                 "humidity": 92,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1602,14 +1394,12 @@ const forceCat =
                 "humidity": 84,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1641,14 +1431,12 @@ const forceCat =
                 "humidity": 86,
                 "temp_kf": 0
             },
-            "weather": [
-                {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10d"
-                }
-            ],
+            "weather": [{
+                "id": 501,
+                "main": "Rain",
+                "description": "moderate rain",
+                "icon": "10d"
+            }],
             "clouds": {
                 "all": 100
             },
@@ -1682,373 +1470,17 @@ const forceCat =
         "sunset": 1695988119
     }
 };
+// console.log(testWet);
+let indexedArray = [];
 
+testWet.list.forEach(wet => {
+    let dtt = wet.dt * 1000; //convert UTC to millisecound 
+    let nttDate = new Date(dtt); // get date from millisecound
 
-async function getWeather(city) {
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city??"dhaka"}&APPID=2acfc6c74c2396283f1bf3b656fc902f`)
-    .then((response)=>response.data)
-    .then((weather)=>{
-        
-        // console.log(weather);
-
-        locationElement.innerHTML = weather.name;
-        searchInputElement.value = weather.name;
-        let temperatureCelcious = weather.main.temp - 275.14;
-        temperatureElement.innerHTML = 
-        `
-            <div id="mainImg"></div>
-            ${temperatureCelcious.toFixed(1)}<sup style="font-size:12px;">°C</sup>
-            <div>
-                <div id="weatherTitle"></div>
-                <div> <span id="minTemp"></span> - <span id="maxTemp"></span><sup style="font-size:11px" >°C</sup> </div>
-            </div>
-        
-        `;
-        // let tempMinCelcious = weather.main.temp_min - 275.14;
-        let tempMaxCelcious = weather.main.temp_max - 275.14;
-        document.getElementById('maxTemp').innerHTML = tempMaxCelcious.toFixed(1);
-        // skyConditionElement.innerHTML = 
-        // `
-        // <div style="display:flex">
-
-        //     <div style="text-align:center">
-        //     <p class="p">${weather.weather[0].main}</p>
-        //     <p class="p"> (${weather.clouds.all}% clear)</p>
-           
-        //     </div>
-        
-        // </div>
-        // `;
-        let windSpeedMiles = weather.wind.speed * 3.6;
-        windMitterElement.innerHTML =
-        `
-        <span class="windMitter"> ${windSpeedMiles.toFixed(3)} Kh/H </span>
-        <div class="h6">
-            <img width="25"  src="img/wind.png">
-        </div>
-        `;
-
-        let sunRiseMillisecound = weather.sys.sunrise * 1000;
-        let sunRiseLocalString = new Date(sunRiseMillisecound);
-        let sunRise = 
-        `
-        <img width="40" height="40" src="img/sunrise.png" alt="">
-        <div class="title">${sunRiseLocalString.getHours()}:${sunRiseLocalString.getMinutes()} AM</div>
-        `;
-        sunRiseElement.innerHTML = sunRise;
-
-        let sunSetMillisecound = weather.sys.sunset * 1000;
-        let sunSetLocalString = new Date(sunSetMillisecound);
-        let sunSet = 
-        `
-        <img width="40" height="40" src="img/sunset.png" alt="">
-        <div class="title"> ${sunSetLocalString.getHours() > 12 ? sunSetLocalString.getHours()-12 : sunSetLocalString.getHours() }:${sunSetLocalString.getMinutes()} PM</div>
-
-        `;
-        sunSetElement.innerHTML = sunSet;
-        getWeatherNextFiveHours(city);
-        rotateSunPostion(sunRiseLocalString, sunSetLocalString);
-
-    })
-    .catch((error)=>{
-        console.log(error);
-        alert("Location Not Fount! or You are bloced.")
-    })
-    // console.log(weatherObj.main);
-   
-    // locationElement.innerHTML = weatherObj.name.toUpperCase();
-    // weatherIconElement.src = `https://openweathermap.org/img/w/${weatherObj.weather[0].icon}.png`;
-}
-getWeather();
-
-function test () {
-
-    locationElement.innerHTML = weatherObj.name;
-    searchInputElement.value = weatherObj.name;
-    let temperatureCelcious = weatherObj.main.temp - 275.14;
-    temperatureElement.innerHTML = 
-    `
-        <div id="mainImg"></div>
-        ${temperatureCelcious.toFixed(1)}<sup style="font-size:12px;">°C</sup>
-        <div>
-            <div id="weatherTitle"></div>
-            <div> <span id="minTemp"></span> - <span id="maxTemp"></span><sup style="font-size:11px" >°C</sup> </div>
-        </div>
-    
-    `;
-
-    let sunRiseMillisecound = weatherObj.sys.sunrise * 1000;
-    let sunRiseLocalString = new Date(sunRiseMillisecound);
-    let sunRise = 
-    `
-    <img width="40" height="40" src="img/sunrise.png" alt="">
-    <div class="title">${sunRiseLocalString.getHours()}:${sunRiseLocalString.getMinutes()} AM</div>
-    `;
-    sunRiseElement.innerHTML = sunRise;
-
-    let sunSetMillisecound = weatherObj.sys.sunset * 1000;
-    let sunSetLocalString = new Date(sunSetMillisecound);
-    let sunSet = 
-    `
-    <img width="40" height="40" src="img/sunset.png" alt="">
-    <div class="title"> ${sunSetLocalString.getHours() > 12 ? sunSetLocalString.getHours()-12 : sunSetLocalString.getHours() }:${sunSetLocalString.getMinutes()} PM</div>
-
-    `;
-    sunSetElement.innerHTML = sunSet;
-    // console.log(sunRiseLocalString.getHours(), sunSetLocalString.getHours(), todate.getHours());
-    rotateSunPostion();
-}
-// test();
-
-function rotateSunPostion(srt, sst) {
-    // let date = new Date().getTime();
-    let sr = srt.getHours()+"."+srt.getMinutes();
-    let ss = sst.getHours()+"."+sst.getMinutes();
-    let ct = todate.getHours()+"."+todate.getMinutes();
-    let srp = -80;
-    let ssp = 80;
-    let getFloatPercentage = ((ct-sr)/(ss-sr))*100;
-    let getIntPer = +getFloatPercentage.toFixed(1);
-
-    let rotatePixel = 1;
-    // if (getIntPer > 50) {
-    //     rotatePixel+=0.8;
-    //     sunOrMon.style.transform = `translateX(-50%) rotate(${rotatePixel}deg)`;
-    // }else{
-    //     rotatePixel-=0.8;
-    //     sunOrMon.style.transform =  `translateX(-50%) rotate(${getIntPer}deg)`;
-    // }
-
-    // run a while loop till getIntPer
-
-    for (let i = 1; i < getIntPer+1; i++) {
-        rotatePixel = srp+=1.5;
-        if(rotatePixel > 80){
-            sunOrMon.style.display = "none";
-        }
+    if (!indexedArray[nttDate.getDate()]) {
+        indexedArray[nttDate.getDate()] = [];
     }
-    if(getIntPer == 0){
-        rotatePixel = -80;
-    }
-   
-    sunOrMon.style.transform =  `translateX(-50%) rotate(${rotatePixel}deg)`;
-    // console.log(getIntPer, rotatePixel.toFixed());
-}
-
-// get current user location 
-// function getCurrentUserLatLog(){
-    
-//     navigator.geolocation.getCurrentPosition((position)=>{
-//         // console.log(position);
-//         currentUserLat = position.coords.latitude.toFixed(2);
-//         currentUserLong = position.coords.longitude.toFixed(2);
-//         console.log(currentUserLat, currentUserLong);
-        
-//         getWeatherNextFiveDays();
-
-//     })
-//     // return [currentUserLat , currentUserLong];
-
-
-// }
-// getCurrentUserLatLog()
-
-
-//get weather from openweathermap for next 5 days
-async function getWeatherNextFiveHours(city) {
-    // await getCurrentUserLatLog();
-    // .then()
-    axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city??"dhaka"}&appid=2acfc6c74c2396283f1bf3b656fc902f`)
-    .then((response)=>response.data)
-    .then((weather)=>{
-        // console.log(weather);
-        let nextDayWeather ='';
-        weather.list.forEach((fw)=>{
-            let currentDate = new Date(); //today
-            let dtt = fw.dt * 1000; //convert UTC to millicound
-            let fwDate = new Date(dtt); //current date corespondint millicound
-            let hours, minute;
-
-            if(fwDate.getHours() > 12){
-                hours = (fwDate.getHours()-12).toString().padStart(2,' ');
-            }else{
-                hours=(fwDate.getHours()).toString().padStart(2," ");
-            }
-            if (hours == 0) {
-                hours = 12;
-            }
-
-            let tempCelcious = fw.main.temp - 275.14;
-        
-            if (fwDate.getDate() == currentDate.getDate() || fwDate.getDate() == currentDate.getDate()+1) {
-                // console.log(fw);
-                nextDayWeather += 
-                `
-                    <div class="weatherItem">
-                        <div class="temp">${ tempCelcious.toFixed(1) }<sup class="sup">°C</sup></div>
-                        <div>
-                            <img class="iconImg" src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png" alt="">
-                            <div class="time">${hours}:${fwDate.getMinutes()}${fwDate.getHours() > 11 ?' PM': ' AM'} </div>
-                        </div>
-                    </div> 
-                
-                `;
-                document.getElementById('mainImg').innerHTML = `<img  src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png">`;
-
-                //min max weather
-                let tempMinCelcious = fw.main.temp_min - 275.14;
-                let tempMaxCelcious = fw.main.temp_max - 275.14;
-                document.getElementById('minTemp').innerHTML = tempMinCelcious.toFixed(1);
-                document.getElementById('weatherTitle').innerHTML = fw.weather[0].main;
-            }
-        })
-        // .setAttribute('src', "https://openweathermap.org/img/w/${fw.weather[0].icon}.png");
-        nextHourWeatherElement.innerHTML = nextDayWeather;
-        nextWeatherInfo = weather;
-        setWeatherNextFourDays()
-
-    })
-    .catch((error)=>{
-        console.log(error);
-    });
-
-    // console.log(counteries.length);
-    // cities.forEach((city)=>{
-    //     if(city.country_id == 1 ){
-    //         console.log(city);
-    //     }
-    // })
-}
-
-
-
-let currentDate = new Date();  //today
-// let utcstring = currentDate.toUTCString();
-// let unixTimestamps = Date.parse(utcstring);
-// let utcTime = new Date(unixTimestapns);
-// console.log(currentDate.getDate());
-
-let footeri = '';  
-async function setWeatherNextFourDays(){
-    //call nextDay funciton 
-    getDay();
-
-    // get next four days weather data
-    makeNestWatherArray();
-    // tempArray = [];
-    // for (let index = currentDate.getDate();; index++) {
-    //     indexCount.push(index);
-
-    //     if (index > 31) {
-    //         index = 1;
-    //     }
-    //     if (indexCount.length > 7) {
-    //         break;
-    //     }
-    //     // console.log(index);
-    //     nextWeatherInfo.list.forEach((fw) => {
-        
-    //         let dtt = fw.dt * 1000; //convert UTC to millisecound 
-    //         let nttDate = new Date(dtt) // get current date from millisecound
-    //         // console.log(nttDate.getDate());
-    //         if (nttDate.getDate() == index) {
-    //             // console.log(fw.dt_txt);
-    //             tempArray[index]=fw;
-    //         }
-
-    //     })
-    // };
-
-    // console.log(tempArray);
-
-    // set next four days weather data 
-
-    footerElement.innerHTML = "";
-    tempArray.forEach((nw, index)=>{
-        // let tempCelcious = nw.main.temp_max - 275.14;
-        let tempCelcious2 = nw.main.temp_min - 275.14;
-        // let nwDates = nw.dtt * 100;
-        // console.log("max:"+nw.main.temp_max, "min:"+nw.main.temp_min);
-        // let nwDate = new Date(nwDates);
-        index-=3
-        footeri +=
-        `
-        <div class="footer-item">
-        
-            <div class="footer-temp">${tempCelcious2.toFixed(1)}  <sup style="font-size:12px">c</sup> </div>
-
-            <div class="footer-img">
-                <img class="iconImg" src="https://openweathermap.org/img/w/${nw.weather[0].icon}.png">
-            </div>
-
-            <div class="footer-title">
-            ${nextFourDay[index]?? "next"}
-            </div>
-
-        </div>
-        `;
-        // console.log(index);
-    })
-    footerElement.innerHTML = footeri;
-    footeri = '';
-    tempArray = [];
-    indexCount = [];
-    const todaysNextHourWeatherTime = document.getElementsByClassName("time")[0].innerHTML = "Now";
-    // console.log(tempArray);
-}
-
-//get coresponding next few days
-async function getDay(){
-    
-    // const today = `${todate.getMonth()+1}/${todate.getDate()} ${todate.getHours()}:${todate.getMinutes()}`;
-    nextFourDay= [];
-    for (let d = todate.getDay();; d++) {
-        if(d > 6){
-            d = 0;
-        }
-        if (nextFourDay.length > 5) {
-            break;
-        }
-        let weakDay = weakNames[d];
-        nextFourDay.push(weakDay);
-        // console.log("before splick "+nextFourDay);
-    };
-    nextFourDay.splice(0,1,"Today");
-    nextFourDay.splice(1,1,"Tomorrow");
-}
-
-// console.log("after splice "+nextFourDay);
-//get coresponding few days weather 
-async function makeNestWatherArray(){
-    // tempArray = [];
-    for (let index = currentDate.getDate();; index++) {
-        indexCount.push(index);
-
-        if (index > 31) {
-            index = 1;
-        }
-        if (indexCount.length > 5) {
-            break;
-        }
-        // console.log(index);
-        nextWeatherInfo.list.forEach((fw) => {
-        
-            let dtt = fw.dt * 1000; //convert UTC to millisecound 
-            let nttDate = new Date(dtt) // get current date from millisecound
-            // console.log(nttDate.getDate());
-            if (nttDate.getDate() == index) {
-                // console.log(fw.dt_txt);
-                tempArray[index]=fw;
-            }
-
-        })
-    };
-
-    // console.log(tempArray);
-}
-
-// document.getElementById('test').addEventListener('click', ()=>{
-//     console.log(nextFourDay);
-// })
-
-});
+    // console.log(nttDate.getDate());
+    indexedArray[nttDate.getDate()].push(wet);
+})
+// console.log(indexedArray);

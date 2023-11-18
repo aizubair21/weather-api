@@ -1,0 +1,56 @@
+.title {
+    /* backdrop-filter: blur(50px); */
+    margin-bottom: 9px;
+    border-bottom: 1px solid gray;
+    z-index: 1;
+
+    .tab_button {
+        font-size: 16px;
+        margin-bottom: -1px;
+        border-width: 1px;
+        border-style: solid;
+        background-color: inherit;
+        color: white;
+        border: none;
+        padding: 8px;
+        z-index: 2;
+    }
+
+    .tab_button_active {
+        font-size: 16px;
+        margin-bottom: -1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray gray #001c33 gray;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        background-color: inherit;
+        color: #fff;
+        padding: 8px;
+        z-index: 2;
+    }
+}
+
+.del {
+    padding: 3px 9px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #CF483A;
+    }
+}
+
+.activity_head {
+    padding: 0px 3px;
+    background-color: #CF483A;
+    margin-bottom: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: 13px; */
+
+    &>* {
+        font-size: 14px;
+    }
+}

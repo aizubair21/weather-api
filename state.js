@@ -375,7 +375,7 @@ const states = [
     },
     {
         "id": 629,
-        "name": "Berat District",
+        "name": "Berat",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -386,7 +386,7 @@ const states = [
     },
     {
         "id": 607,
-        "name": "Bulqizë District",
+        "name": "Bulqizë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -397,7 +397,7 @@ const states = [
     },
     {
         "id": 618,
-        "name": "Delvinë District",
+        "name": "Delvinë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -408,7 +408,7 @@ const states = [
     },
     {
         "id": 608,
-        "name": "Devoll District",
+        "name": "Devoll",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -430,7 +430,7 @@ const states = [
     },
     {
         "id": 605,
-        "name": "Dibër District",
+        "name": "Dibër",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -452,7 +452,7 @@ const states = [
     },
     {
         "id": 639,
-        "name": "Durrës District",
+        "name": "Durrës",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -485,7 +485,7 @@ const states = [
     },
     {
         "id": 627,
-        "name": "Fier District",
+        "name": "Fier",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -507,7 +507,7 @@ const states = [
     },
     {
         "id": 621,
-        "name": "Gjirokastër District",
+        "name": "Gjirokastër",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -518,7 +518,7 @@ const states = [
     },
     {
         "id": 617,
-        "name": "Gramsh District",
+        "name": "Gramsh",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -529,7 +529,7 @@ const states = [
     },
     {
         "id": 600,
-        "name": "Has District",
+        "name": "Has",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -540,7 +540,7 @@ const states = [
     },
     {
         "id": 594,
-        "name": "Kavajë District",
+        "name": "Kavajë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -551,7 +551,7 @@ const states = [
     },
     {
         "id": 628,
-        "name": "Kolonjë District",
+        "name": "Kolonjë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -573,7 +573,7 @@ const states = [
     },
     {
         "id": 597,
-        "name": "Korçë District",
+        "name": "Korçë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -584,7 +584,7 @@ const states = [
     },
     {
         "id": 614,
-        "name": "Krujë District",
+        "name": "Krujë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -595,7 +595,7 @@ const states = [
     },
     {
         "id": 612,
-        "name": "Kuçovë District",
+        "name": "Kuçovë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -617,7 +617,7 @@ const states = [
     },
     {
         "id": 623,
-        "name": "Kukës District",
+        "name": "Kukës",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -628,7 +628,7 @@ const states = [
     },
     {
         "id": 622,
-        "name": "Kurbin District",
+        "name": "Kurbin",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -650,7 +650,7 @@ const states = [
     },
     {
         "id": 595,
-        "name": "Lezhë District",
+        "name": "Lezhë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -661,7 +661,7 @@ const states = [
     },
     {
         "id": 596,
-        "name": "Librazhd District",
+        "name": "Librazhd",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -672,7 +672,7 @@ const states = [
     },
     {
         "id": 599,
-        "name": "Lushnjë District",
+        "name": "Lushnjë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -683,7 +683,7 @@ const states = [
     },
     {
         "id": 602,
-        "name": "Malësi e Madhe District",
+        "name": "Malësi e Madhe",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -694,7 +694,7 @@ const states = [
     },
     {
         "id": 637,
-        "name": "Mallakastër District",
+        "name": "Mallakastër",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -705,7 +705,7 @@ const states = [
     },
     {
         "id": 635,
-        "name": "Mat District",
+        "name": "Mat",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -716,7 +716,7 @@ const states = [
     },
     {
         "id": 638,
-        "name": "Mirditë District",
+        "name": "Mirditë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -727,7 +727,7 @@ const states = [
     },
     {
         "id": 619,
-        "name": "Peqin District",
+        "name": "Peqin",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -738,7 +738,7 @@ const states = [
     },
     {
         "id": 625,
-        "name": "Përmet District",
+        "name": "Përmet",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -749,7 +749,7 @@ const states = [
     },
     {
         "id": 606,
-        "name": "Pogradec District",
+        "name": "Pogradec",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -760,7 +760,7 @@ const states = [
     },
     {
         "id": 620,
-        "name": "Pukë District",
+        "name": "Pukë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -771,7 +771,7 @@ const states = [
     },
     {
         "id": 624,
-        "name": "Sarandë District",
+        "name": "Sarandë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -793,7 +793,7 @@ const states = [
     },
     {
         "id": 626,
-        "name": "Shkodër District",
+        "name": "Shkodër",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -804,7 +804,7 @@ const states = [
     },
     {
         "id": 593,
-        "name": "Skrapar District",
+        "name": "Skrapar",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -815,7 +815,7 @@ const states = [
     },
     {
         "id": 616,
-        "name": "Tepelenë District",
+        "name": "Tepelenë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -837,7 +837,7 @@ const states = [
     },
     {
         "id": 633,
-        "name": "Tirana District",
+        "name": "Tirana",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -848,7 +848,7 @@ const states = [
     },
     {
         "id": 636,
-        "name": "Tropojë District",
+        "name": "Tropojë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -870,7 +870,7 @@ const states = [
     },
     {
         "id": 613,
-        "name": "Vlorë District",
+        "name": "Vlorë",
         "country_id": 3,
         "country_code": "AL",
         "country_name": "Albania",
@@ -2443,7 +2443,7 @@ const states = [
     },
     {
         "id": 540,
-        "name": "Absheron District",
+        "name": "Absheron",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2454,7 +2454,7 @@ const states = [
     },
     {
         "id": 559,
-        "name": "Agdam District",
+        "name": "Agdam",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2465,7 +2465,7 @@ const states = [
     },
     {
         "id": 553,
-        "name": "Agdash District",
+        "name": "Agdash",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2476,7 +2476,7 @@ const states = [
     },
     {
         "id": 577,
-        "name": "Aghjabadi District",
+        "name": "Aghjabadi",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2487,7 +2487,7 @@ const states = [
     },
     {
         "id": 543,
-        "name": "Agstafa District",
+        "name": "Agstafa",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2498,7 +2498,7 @@ const states = [
     },
     {
         "id": 547,
-        "name": "Agsu District",
+        "name": "Agsu",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2509,7 +2509,7 @@ const states = [
     },
     {
         "id": 528,
-        "name": "Astara District",
+        "name": "Astara",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2520,7 +2520,7 @@ const states = [
     },
     {
         "id": 575,
-        "name": "Babek District",
+        "name": "Babek",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2542,7 +2542,7 @@ const states = [
     },
     {
         "id": 560,
-        "name": "Balakan District",
+        "name": "Balakan",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2553,7 +2553,7 @@ const states = [
     },
     {
         "id": 569,
-        "name": "Barda District",
+        "name": "Barda",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2564,7 +2564,7 @@ const states = [
     },
     {
         "id": 554,
-        "name": "Beylagan District",
+        "name": "Beylagan",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2575,7 +2575,7 @@ const states = [
     },
     {
         "id": 532,
-        "name": "Bilasuvar District",
+        "name": "Bilasuvar",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2586,7 +2586,7 @@ const states = [
     },
     {
         "id": 561,
-        "name": "Dashkasan District",
+        "name": "Dashkasan",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2597,7 +2597,7 @@ const states = [
     },
     {
         "id": 527,
-        "name": "Fizuli District",
+        "name": "Fizuli",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2630,7 +2630,7 @@ const states = [
     },
     {
         "id": 573,
-        "name": "Gobustan District",
+        "name": "Gobustan",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2641,7 +2641,7 @@ const states = [
     },
     {
         "id": 551,
-        "name": "Goranboy District",
+        "name": "Goranboy",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2663,7 +2663,7 @@ const states = [
     },
     {
         "id": 574,
-        "name": "Goygol District",
+        "name": "Goygol",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2674,7 +2674,7 @@ const states = [
     },
     {
         "id": 571,
-        "name": "Hajigabul District",
+        "name": "Hajigabul",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2685,7 +2685,7 @@ const states = [
     },
     {
         "id": 544,
-        "name": "Imishli District",
+        "name": "Imishli",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2696,7 +2696,7 @@ const states = [
     },
     {
         "id": 564,
-        "name": "Ismailli District",
+        "name": "Ismailli",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2707,7 +2707,7 @@ const states = [
     },
     {
         "id": 570,
-        "name": "Jabrayil District",
+        "name": "Jabrayil",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2718,7 +2718,7 @@ const states = [
     },
     {
         "id": 578,
-        "name": "Jalilabad District",
+        "name": "Jalilabad",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2729,7 +2729,7 @@ const states = [
     },
     {
         "id": 572,
-        "name": "Julfa District",
+        "name": "Julfa",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2740,7 +2740,7 @@ const states = [
     },
     {
         "id": 525,
-        "name": "Kalbajar District",
+        "name": "Kalbajar",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2751,7 +2751,7 @@ const states = [
     },
     {
         "id": 567,
-        "name": "Kangarli District",
+        "name": "Kangarli",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2762,7 +2762,7 @@ const states = [
     },
     {
         "id": 590,
-        "name": "Khachmaz District",
+        "name": "Khachmaz",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2773,7 +2773,7 @@ const states = [
     },
     {
         "id": 537,
-        "name": "Khizi District",
+        "name": "Khizi",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2784,7 +2784,7 @@ const states = [
     },
     {
         "id": 524,
-        "name": "Khojali District",
+        "name": "Khojali",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2795,7 +2795,7 @@ const states = [
     },
     {
         "id": 549,
-        "name": "Kurdamir District",
+        "name": "Kurdamir",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2806,7 +2806,7 @@ const states = [
     },
     {
         "id": 541,
-        "name": "Lachin District",
+        "name": "Lachin",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2828,7 +2828,7 @@ const states = [
     },
     {
         "id": 558,
-        "name": "Lankaran District",
+        "name": "Lankaran",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2839,7 +2839,7 @@ const states = [
     },
     {
         "id": 546,
-        "name": "Lerik District",
+        "name": "Lerik",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2861,7 +2861,7 @@ const states = [
     },
     {
         "id": 555,
-        "name": "Masally District",
+        "name": "Masally",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2894,7 +2894,7 @@ const states = [
     },
     {
         "id": 530,
-        "name": "Neftchala District",
+        "name": "Neftchala",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2905,7 +2905,7 @@ const states = [
     },
     {
         "id": 556,
-        "name": "Oghuz District",
+        "name": "Oghuz",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2916,7 +2916,7 @@ const states = [
     },
     {
         "id": 534,
-        "name": "Ordubad District",
+        "name": "Ordubad",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2927,7 +2927,7 @@ const states = [
     },
     {
         "id": 542,
-        "name": "Qabala District",
+        "name": "Qabala",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2938,7 +2938,7 @@ const states = [
     },
     {
         "id": 526,
-        "name": "Qakh District",
+        "name": "Qakh",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2949,7 +2949,7 @@ const states = [
     },
     {
         "id": 521,
-        "name": "Qazakh District",
+        "name": "Qazakh",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2960,7 +2960,7 @@ const states = [
     },
     {
         "id": 563,
-        "name": "Quba District",
+        "name": "Quba",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2971,7 +2971,7 @@ const states = [
     },
     {
         "id": 548,
-        "name": "Qubadli District",
+        "name": "Qubadli",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2982,7 +2982,7 @@ const states = [
     },
     {
         "id": 588,
-        "name": "Qusar District",
+        "name": "Qusar",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -2993,7 +2993,7 @@ const states = [
     },
     {
         "id": 557,
-        "name": "Saatly District",
+        "name": "Saatly",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3004,7 +3004,7 @@ const states = [
     },
     {
         "id": 565,
-        "name": "Sabirabad District",
+        "name": "Sabirabad",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3015,7 +3015,7 @@ const states = [
     },
     {
         "id": 522,
-        "name": "Sadarak District",
+        "name": "Sadarak",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3026,7 +3026,7 @@ const states = [
     },
     {
         "id": 545,
-        "name": "Salyan District",
+        "name": "Salyan",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3037,7 +3037,7 @@ const states = [
     },
     {
         "id": 536,
-        "name": "Samukh District",
+        "name": "Samukh",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3048,7 +3048,7 @@ const states = [
     },
     {
         "id": 591,
-        "name": "Shabran District",
+        "name": "Shabran",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3059,7 +3059,7 @@ const states = [
     },
     {
         "id": 579,
-        "name": "Shahbuz District",
+        "name": "Shahbuz",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3081,7 +3081,7 @@ const states = [
     },
     {
         "id": 586,
-        "name": "Shaki District",
+        "name": "Shaki",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3092,7 +3092,7 @@ const states = [
     },
     {
         "id": 529,
-        "name": "Shamakhi District",
+        "name": "Shamakhi",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3103,7 +3103,7 @@ const states = [
     },
     {
         "id": 583,
-        "name": "Shamkir District",
+        "name": "Shamkir",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3114,7 +3114,7 @@ const states = [
     },
     {
         "id": 535,
-        "name": "Sharur District",
+        "name": "Sharur",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3136,7 +3136,7 @@ const states = [
     },
     {
         "id": 592,
-        "name": "Shusha District",
+        "name": "Shusha",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3147,7 +3147,7 @@ const states = [
     },
     {
         "id": 584,
-        "name": "Siazan District",
+        "name": "Siazan",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3169,7 +3169,7 @@ const states = [
     },
     {
         "id": 519,
-        "name": "Tartar District",
+        "name": "Tartar",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3180,7 +3180,7 @@ const states = [
     },
     {
         "id": 533,
-        "name": "Tovuz District",
+        "name": "Tovuz",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3191,7 +3191,7 @@ const states = [
     },
     {
         "id": 539,
-        "name": "Ujar District",
+        "name": "Ujar",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3202,7 +3202,7 @@ const states = [
     },
     {
         "id": 550,
-        "name": "Yardymli District",
+        "name": "Yardymli",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3224,7 +3224,7 @@ const states = [
     },
     {
         "id": 523,
-        "name": "Yevlakh District",
+        "name": "Yevlakh",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3235,7 +3235,7 @@ const states = [
     },
     {
         "id": 581,
-        "name": "Zangilan District",
+        "name": "Zangilan",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3246,7 +3246,7 @@ const states = [
     },
     {
         "id": 566,
-        "name": "Zaqatala District",
+        "name": "Zaqatala",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3257,7 +3257,7 @@ const states = [
     },
     {
         "id": 576,
-        "name": "Zardab District",
+        "name": "Zardab",
         "country_id": 16,
         "country_code": "AZ",
         "country_name": "Azerbaijan",
@@ -3323,7 +3323,7 @@ const states = [
     },
     {
         "id": 796,
-        "name": "Bagerhat District",
+        "name": "Bagerhat",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3345,7 +3345,7 @@ const states = [
     },
     {
         "id": 752,
-        "name": "Bandarban District",
+        "name": "Bandarban",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3356,7 +3356,7 @@ const states = [
     },
     {
         "id": 784,
-        "name": "Barguna District",
+        "name": "Barguna",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3367,7 +3367,7 @@ const states = [
     },
     {
         "id": 818,
-        "name": "Barisal District",
+        "name": "Barisal",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3389,7 +3389,7 @@ const states = [
     },
     {
         "id": 756,
-        "name": "Bhola District",
+        "name": "Bhola",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3400,7 +3400,7 @@ const states = [
     },
     {
         "id": 797,
-        "name": "Bogra District",
+        "name": "Bogra",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3411,7 +3411,7 @@ const states = [
     },
     {
         "id": 810,
-        "name": "Brahmanbaria District",
+        "name": "Brahmanbaria",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3422,7 +3422,7 @@ const states = [
     },
     {
         "id": 768,
-        "name": "Chandpur District",
+        "name": "Chandpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3433,7 +3433,7 @@ const states = [
     },
     {
         "id": 761,
-        "name": "Chapai Nawabganj District",
+        "name": "Chapai Nawabganj",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3444,7 +3444,7 @@ const states = [
     },
     {
         "id": 785,
-        "name": "Chittagong District",
+        "name": "Chittagong",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3466,7 +3466,7 @@ const states = [
     },
     {
         "id": 788,
-        "name": "Chuadanga District",
+        "name": "Chuadanga",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3477,7 +3477,7 @@ const states = [
     },
     {
         "id": 763,
-        "name": "Comilla District",
+        "name": "Comilla",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3488,7 +3488,7 @@ const states = [
     },
     {
         "id": 751,
-        "name": "Cox's Bazar District",
+        "name": "Cox's Bazar",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3499,7 +3499,7 @@ const states = [
     },
     {
         "id": 771,
-        "name": "Dhaka District",
+        "name": "Dhaka",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3521,7 +3521,7 @@ const states = [
     },
     {
         "id": 783,
-        "name": "Dinajpur District",
+        "name": "Dinajpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3532,7 +3532,7 @@ const states = [
     },
     {
         "id": 762,
-        "name": "Faridpur District",
+        "name": "Faridpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3543,7 +3543,7 @@ const states = [
     },
     {
         "id": 816,
-        "name": "Feni District",
+        "name": "Feni",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3554,7 +3554,7 @@ const states = [
     },
     {
         "id": 795,
-        "name": "Gaibandha District",
+        "name": "Gaibandha",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3565,7 +3565,7 @@ const states = [
     },
     {
         "id": 798,
-        "name": "Gazipur District",
+        "name": "Gazipur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3576,7 +3576,7 @@ const states = [
     },
     {
         "id": 792,
-        "name": "Gopalganj District",
+        "name": "Gopalganj",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3587,7 +3587,7 @@ const states = [
     },
     {
         "id": 805,
-        "name": "Habiganj District",
+        "name": "Habiganj",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3598,7 +3598,7 @@ const states = [
     },
     {
         "id": 808,
-        "name": "Jamalpur District",
+        "name": "Jamalpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3609,7 +3609,7 @@ const states = [
     },
     {
         "id": 757,
-        "name": "Jessore District",
+        "name": "Jessore",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3620,7 +3620,7 @@ const states = [
     },
     {
         "id": 778,
-        "name": "Jhalokati District",
+        "name": "Jhalokati",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3631,7 +3631,7 @@ const states = [
     },
     {
         "id": 789,
-        "name": "Jhenaidah District",
+        "name": "Jhenaidah",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3642,7 +3642,7 @@ const states = [
     },
     {
         "id": 806,
-        "name": "Joypurhat District",
+        "name": "Joypurhat",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3653,7 +3653,7 @@ const states = [
     },
     {
         "id": 786,
-        "name": "Khagrachari District",
+        "name": "Khagrachari",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3664,7 +3664,7 @@ const states = [
     },
     {
         "id": 811,
-        "name": "Khulna District",
+        "name": "Khulna",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3686,7 +3686,7 @@ const states = [
     },
     {
         "id": 779,
-        "name": "Kishoreganj District",
+        "name": "Kishoreganj",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3697,7 +3697,7 @@ const states = [
     },
     {
         "id": 793,
-        "name": "Kurigram District",
+        "name": "Kurigram",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3708,7 +3708,7 @@ const states = [
     },
     {
         "id": 774,
-        "name": "Kushtia District",
+        "name": "Kushtia",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3719,7 +3719,7 @@ const states = [
     },
     {
         "id": 819,
-        "name": "Lakshmipur District",
+        "name": "Lakshmipur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3730,7 +3730,7 @@ const states = [
     },
     {
         "id": 780,
-        "name": "Lalmonirhat District",
+        "name": "Lalmonirhat",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3741,7 +3741,7 @@ const states = [
     },
     {
         "id": 817,
-        "name": "Madaripur District",
+        "name": "Madaripur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3752,7 +3752,7 @@ const states = [
     },
     {
         "id": 776,
-        "name": "Meherpur District",
+        "name": "Meherpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3763,7 +3763,7 @@ const states = [
     },
     {
         "id": 794,
-        "name": "Moulvibazar District",
+        "name": "Moulvibazar",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3774,7 +3774,7 @@ const states = [
     },
     {
         "id": 790,
-        "name": "Munshiganj District",
+        "name": "Munshiganj",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3785,7 +3785,7 @@ const states = [
     },
     {
         "id": 766,
-        "name": "Mymensingh District",
+        "name": "Mymensingh",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3807,7 +3807,7 @@ const states = [
     },
     {
         "id": 814,
-        "name": "Naogaon District",
+        "name": "Naogaon",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3818,7 +3818,7 @@ const states = [
     },
     {
         "id": 769,
-        "name": "Narail District",
+        "name": "Narail",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3829,7 +3829,7 @@ const states = [
     },
     {
         "id": 770,
-        "name": "Narayanganj District",
+        "name": "Narayanganj",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3840,7 +3840,7 @@ const states = [
     },
     {
         "id": 787,
-        "name": "Natore District",
+        "name": "Natore",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3851,7 +3851,7 @@ const states = [
     },
     {
         "id": 764,
-        "name": "Netrokona District",
+        "name": "Netrokona",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3862,7 +3862,7 @@ const states = [
     },
     {
         "id": 772,
-        "name": "Nilphamari District",
+        "name": "Nilphamari",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3873,7 +3873,7 @@ const states = [
     },
     {
         "id": 815,
-        "name": "Noakhali District",
+        "name": "Noakhali",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3884,7 +3884,7 @@ const states = [
     },
     {
         "id": 754,
-        "name": "Pabna District",
+        "name": "Pabna",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3895,7 +3895,7 @@ const states = [
     },
     {
         "id": 800,
-        "name": "Panchagarh District",
+        "name": "Panchagarh",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3906,7 +3906,7 @@ const states = [
     },
     {
         "id": 777,
-        "name": "Patuakhali District",
+        "name": "Patuakhali",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3917,7 +3917,7 @@ const states = [
     },
     {
         "id": 791,
-        "name": "Pirojpur District",
+        "name": "Pirojpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3928,7 +3928,7 @@ const states = [
     },
     {
         "id": 773,
-        "name": "Rajbari District",
+        "name": "Rajbari",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3939,7 +3939,7 @@ const states = [
     },
     {
         "id": 813,
-        "name": "Rajshahi District",
+        "name": "Rajshahi",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3961,7 +3961,7 @@ const states = [
     },
     {
         "id": 809,
-        "name": "Rangamati Hill District",
+        "name": "Rangamati Hill",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3972,7 +3972,7 @@ const states = [
     },
     {
         "id": 759,
-        "name": "Rangpur District",
+        "name": "Rangpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -3994,7 +3994,7 @@ const states = [
     },
     {
         "id": 799,
-        "name": "Satkhira District",
+        "name": "Satkhira",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -4005,7 +4005,7 @@ const states = [
     },
     {
         "id": 801,
-        "name": "Shariatpur District",
+        "name": "Shariatpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -4016,7 +4016,7 @@ const states = [
     },
     {
         "id": 755,
-        "name": "Sherpur District",
+        "name": "Sherpur",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -4027,7 +4027,7 @@ const states = [
     },
     {
         "id": 781,
-        "name": "Sirajganj District",
+        "name": "Sirajganj",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -4038,7 +4038,7 @@ const states = [
     },
     {
         "id": 812,
-        "name": "Sunamganj District",
+        "name": "Sunamganj",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -4049,7 +4049,7 @@ const states = [
     },
     {
         "id": 767,
-        "name": "Sylhet District",
+        "name": "Sylhet",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -4071,7 +4071,7 @@ const states = [
     },
     {
         "id": 782,
-        "name": "Tangail District",
+        "name": "Tangail",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -4082,7 +4082,7 @@ const states = [
     },
     {
         "id": 804,
-        "name": "Thakurgaon District",
+        "name": "Thakurgaon",
         "country_id": 19,
         "country_code": "BD",
         "country_name": "Bangladesh",
@@ -4434,7 +4434,7 @@ const states = [
     },
     {
         "id": 264,
-        "name": "Belize District",
+        "name": "Belize",
         "country_id": 23,
         "country_code": "BZ",
         "country_name": "Belize",
@@ -4445,7 +4445,7 @@ const states = [
     },
     {
         "id": 269,
-        "name": "Cayo District",
+        "name": "Cayo",
         "country_id": 23,
         "country_code": "BZ",
         "country_name": "Belize",
@@ -4456,7 +4456,7 @@ const states = [
     },
     {
         "id": 266,
-        "name": "Corozal District",
+        "name": "Corozal",
         "country_id": 23,
         "country_code": "BZ",
         "country_name": "Belize",
@@ -4467,7 +4467,7 @@ const states = [
     },
     {
         "id": 268,
-        "name": "Orange Walk District",
+        "name": "Orange Walk",
         "country_id": 23,
         "country_code": "BZ",
         "country_name": "Belize",
@@ -4478,7 +4478,7 @@ const states = [
     },
     {
         "id": 265,
-        "name": "Stann Creek District",
+        "name": "Stann Creek",
         "country_id": 23,
         "country_code": "BZ",
         "country_name": "Belize",
@@ -4489,7 +4489,7 @@ const states = [
     },
     {
         "id": 267,
-        "name": "Toledo District",
+        "name": "Toledo",
         "country_id": 23,
         "country_code": "BZ",
         "country_name": "Belize",
@@ -4731,7 +4731,7 @@ const states = [
     },
     {
         "id": 240,
-        "name": "Bumthang District",
+        "name": "Bumthang",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4742,7 +4742,7 @@ const states = [
     },
     {
         "id": 239,
-        "name": "Chukha District",
+        "name": "Chukha",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4753,7 +4753,7 @@ const states = [
     },
     {
         "id": 238,
-        "name": "Dagana District",
+        "name": "Dagana",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4764,7 +4764,7 @@ const states = [
     },
     {
         "id": 229,
-        "name": "Gasa District",
+        "name": "Gasa",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4775,7 +4775,7 @@ const states = [
     },
     {
         "id": 232,
-        "name": "Haa District",
+        "name": "Haa",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4786,7 +4786,7 @@ const states = [
     },
     {
         "id": 234,
-        "name": "Lhuntse District",
+        "name": "Lhuntse",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4797,7 +4797,7 @@ const states = [
     },
     {
         "id": 242,
-        "name": "Mongar District",
+        "name": "Mongar",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4808,7 +4808,7 @@ const states = [
     },
     {
         "id": 237,
-        "name": "Paro District",
+        "name": "Paro",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4819,7 +4819,7 @@ const states = [
     },
     {
         "id": 244,
-        "name": "Pemagatshel District",
+        "name": "Pemagatshel",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4830,7 +4830,7 @@ const states = [
     },
     {
         "id": 235,
-        "name": "Punakha District",
+        "name": "Punakha",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4841,7 +4841,7 @@ const states = [
     },
     {
         "id": 243,
-        "name": "Samdrup Jongkhar District",
+        "name": "Samdrup Jongkhar",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4852,7 +4852,7 @@ const states = [
     },
     {
         "id": 246,
-        "name": "Samtse District",
+        "name": "Samtse",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4863,7 +4863,7 @@ const states = [
     },
     {
         "id": 247,
-        "name": "Sarpang District",
+        "name": "Sarpang",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4874,7 +4874,7 @@ const states = [
     },
     {
         "id": 241,
-        "name": "Thimphu District",
+        "name": "Thimphu",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4885,7 +4885,7 @@ const states = [
     },
     {
         "id": 236,
-        "name": "Trashigang District",
+        "name": "Trashigang",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4896,7 +4896,7 @@ const states = [
     },
     {
         "id": 245,
-        "name": "Trongsa District",
+        "name": "Trongsa",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4907,7 +4907,7 @@ const states = [
     },
     {
         "id": 230,
-        "name": "Tsirang District",
+        "name": "Tsirang",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4918,7 +4918,7 @@ const states = [
     },
     {
         "id": 231,
-        "name": "Wangdue Phodrang District",
+        "name": "Wangdue Phodrang",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -4929,7 +4929,7 @@ const states = [
     },
     {
         "id": 233,
-        "name": "Zhemgang District",
+        "name": "Zhemgang",
         "country_id": 26,
         "country_code": "BT",
         "country_name": "Bhutan",
@@ -5083,7 +5083,7 @@ const states = [
     },
     {
         "id": 460,
-        "name": "Brčko District",
+        "name": "Brčko",
         "country_id": 28,
         "country_code": "BA",
         "country_name": "Bosnia and Herzegovina",
@@ -5215,7 +5215,7 @@ const states = [
     },
     {
         "id": 3067,
-        "name": "Central District",
+        "name": "Central",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5226,7 +5226,7 @@ const states = [
     },
     {
         "id": 3061,
-        "name": "Ghanzi District",
+        "name": "Ghanzi",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5237,7 +5237,7 @@ const states = [
     },
     {
         "id": 3066,
-        "name": "Kgalagadi District",
+        "name": "Kgalagadi",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5248,7 +5248,7 @@ const states = [
     },
     {
         "id": 3062,
-        "name": "Kgatleng District",
+        "name": "Kgatleng",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5259,7 +5259,7 @@ const states = [
     },
     {
         "id": 3069,
-        "name": "Kweneng District",
+        "name": "Kweneng",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5281,7 +5281,7 @@ const states = [
     },
     {
         "id": 3068,
-        "name": "North-East District",
+        "name": "North-East",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5292,7 +5292,7 @@ const states = [
     },
     {
         "id": 3065,
-        "name": "North-West District",
+        "name": "North-West",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5303,7 +5303,7 @@ const states = [
     },
     {
         "id": 3064,
-        "name": "South-East District",
+        "name": "South-East",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5314,7 +5314,7 @@ const states = [
     },
     {
         "id": 3063,
-        "name": "Southern District",
+        "name": "Southern",
         "country_id": 29,
         "country_code": "BW",
         "country_name": "Botswana",
@@ -5622,7 +5622,7 @@ const states = [
     },
     {
         "id": 1217,
-        "name": "Belait District",
+        "name": "Belait",
         "country_id": 33,
         "country_code": "BN",
         "country_name": "Brunei",
@@ -5633,7 +5633,7 @@ const states = [
     },
     {
         "id": 1216,
-        "name": "Brunei-Muara District",
+        "name": "Brunei-Muara",
         "country_id": 33,
         "country_code": "BN",
         "country_name": "Brunei",
@@ -5644,7 +5644,7 @@ const states = [
     },
     {
         "id": 1218,
-        "name": "Temburong District",
+        "name": "Temburong",
         "country_id": 33,
         "country_code": "BN",
         "country_name": "Brunei",
@@ -5655,7 +5655,7 @@ const states = [
     },
     {
         "id": 1219,
-        "name": "Tutong District",
+        "name": "Tutong",
         "country_id": 33,
         "country_code": "BN",
         "country_name": "Brunei",
@@ -8619,7 +8619,7 @@ const states = [
         "country_code": "CO",
         "country_name": "Colombia",
         "state_code": "DC",
-        "type": "capital district",
+        "type": "capital",
         "latitude": "4.28204150",
         "longitude": "-74.50270420"
     },
@@ -9197,7 +9197,7 @@ const states = [
     },
     {
         "id": 2643,
-        "name": "Bas-Sassandra District",
+        "name": "Bas-Sassandra",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9219,7 +9219,7 @@ const states = [
     },
     {
         "id": 2654,
-        "name": "Comoé District",
+        "name": "Comoé",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9230,7 +9230,7 @@ const states = [
     },
     {
         "id": 2644,
-        "name": "Denguélé District",
+        "name": "Denguélé",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9274,7 +9274,7 @@ const states = [
     },
     {
         "id": 2651,
-        "name": "Gôh-Djiboua District",
+        "name": "Gôh-Djiboua",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9296,7 +9296,7 @@ const states = [
     },
     {
         "id": 2632,
-        "name": "Lacs District",
+        "name": "Lacs",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9318,7 +9318,7 @@ const states = [
     },
     {
         "id": 2627,
-        "name": "Lagunes District",
+        "name": "Lagunes",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9351,7 +9351,7 @@ const states = [
     },
     {
         "id": 2629,
-        "name": "Montagnes District",
+        "name": "Montagnes",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9395,7 +9395,7 @@ const states = [
     },
     {
         "id": 2648,
-        "name": "Sassandra-Marahoué District",
+        "name": "Sassandra-Marahoué",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9439,7 +9439,7 @@ const states = [
     },
     {
         "id": 2637,
-        "name": "Vallée du Bandama District",
+        "name": "Vallée du Bandama",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9461,7 +9461,7 @@ const states = [
     },
     {
         "id": 2650,
-        "name": "Woroba District",
+        "name": "Woroba",
         "country_id": 54,
         "country_code": "CI",
         "country_name": "Cote D'Ivoire (Ivory Coast)",
@@ -9912,7 +9912,7 @@ const states = [
     },
     {
         "id": 749,
-        "name": "Famagusta District (Mağusa)",
+        "name": "Famagusta (Mağusa)",
         "country_id": 57,
         "country_code": "CY",
         "country_name": "Cyprus",
@@ -9923,7 +9923,7 @@ const states = [
     },
     {
         "id": 744,
-        "name": "Kyrenia District (Keryneia)",
+        "name": "Kyrenia (Keryneia)",
         "country_id": 57,
         "country_code": "CY",
         "country_name": "Cyprus",
@@ -9934,7 +9934,7 @@ const states = [
     },
     {
         "id": 747,
-        "name": "Larnaca District (Larnaka)",
+        "name": "Larnaca (Larnaka)",
         "country_id": 57,
         "country_code": "CY",
         "country_name": "Cyprus",
@@ -9945,7 +9945,7 @@ const states = [
     },
     {
         "id": 748,
-        "name": "Limassol District (Leymasun)",
+        "name": "Limassol (Leymasun)",
         "country_id": 57,
         "country_code": "CY",
         "country_name": "Cyprus",
@@ -9956,7 +9956,7 @@ const states = [
     },
     {
         "id": 745,
-        "name": "Nicosia District (Lefkoşa)",
+        "name": "Nicosia (Lefkoşa)",
         "country_id": 57,
         "country_code": "CY",
         "country_name": "Cyprus",
@@ -9967,7 +9967,7 @@ const states = [
     },
     {
         "id": 746,
-        "name": "Paphos District (Pafos)",
+        "name": "Paphos (Pafos)",
         "country_id": 57,
         "country_code": "CY",
         "country_name": "Cyprus",
@@ -11892,7 +11892,7 @@ const states = [
     },
     {
         "id": 4516,
-        "name": "Ermera District",
+        "name": "Ermera",
         "country_id": 63,
         "country_code": "TL",
         "country_name": "East Timor",
@@ -11925,7 +11925,7 @@ const states = [
     },
     {
         "id": 4517,
-        "name": "Manatuto District",
+        "name": "Manatuto",
         "country_id": 63,
         "country_code": "TL",
         "country_name": "East Timor",
@@ -18486,7 +18486,7 @@ const states = [
         "country_code": "ID",
         "country_name": "Indonesia",
         "state_code": "JK",
-        "type": "capital district",
+        "type": "capital",
         "latitude": "-6.20876340",
         "longitude": "106.84559900"
     },
@@ -19658,7 +19658,7 @@ const states = [
     },
     {
         "id": 1367,
-        "name": "Central District",
+        "name": "Central",
         "country_id": 106,
         "country_code": "IL",
         "country_name": "Israel",
@@ -19669,7 +19669,7 @@ const states = [
     },
     {
         "id": 1369,
-        "name": "Haifa District",
+        "name": "Haifa",
         "country_id": 106,
         "country_code": "IL",
         "country_name": "Israel",
@@ -19680,7 +19680,7 @@ const states = [
     },
     {
         "id": 1370,
-        "name": "Jerusalem District",
+        "name": "Jerusalem",
         "country_id": 106,
         "country_code": "IL",
         "country_name": "Israel",
@@ -19691,7 +19691,7 @@ const states = [
     },
     {
         "id": 1366,
-        "name": "Northern District",
+        "name": "Northern",
         "country_id": 106,
         "country_code": "IL",
         "country_name": "Israel",
@@ -19702,7 +19702,7 @@ const states = [
     },
     {
         "id": 1368,
-        "name": "Southern District",
+        "name": "Southern",
         "country_id": 106,
         "country_code": "IL",
         "country_name": "Israel",
@@ -19713,7 +19713,7 @@ const states = [
     },
     {
         "id": 1371,
-        "name": "Tel Aviv District",
+        "name": "Tel Aviv",
         "country_id": 106,
         "country_code": "IL",
         "country_name": "Israel",
@@ -22485,7 +22485,7 @@ const states = [
     },
     {
         "id": 4876,
-        "name": "Đakovica District (Gjakove)",
+        "name": "Đakovica (Gjakove)",
         "country_id": 248,
         "country_code": "XK",
         "country_name": "Kosovo",
@@ -22496,7 +22496,7 @@ const states = [
     },
     {
         "id": 4877,
-        "name": "Gjilan District",
+        "name": "Gjilan",
         "country_id": 248,
         "country_code": "XK",
         "country_name": "Kosovo",
@@ -22507,7 +22507,7 @@ const states = [
     },
     {
         "id": 4878,
-        "name": "Kosovska Mitrovica District",
+        "name": "Kosovska Mitrovica",
         "country_id": 248,
         "country_code": "XK",
         "country_name": "Kosovo",
@@ -22518,7 +22518,7 @@ const states = [
     },
     {
         "id": 3738,
-        "name": "Peć District",
+        "name": "Peć",
         "country_id": 248,
         "country_code": "XK",
         "country_name": "Kosovo",
@@ -22540,7 +22540,7 @@ const states = [
     },
     {
         "id": 3723,
-        "name": "Prizren District",
+        "name": "Prizren",
         "country_id": 248,
         "country_code": "XK",
         "country_name": "Kosovo",
@@ -22551,7 +22551,7 @@ const states = [
     },
     {
         "id": 4874,
-        "name": "Uroševac District (Ferizaj)",
+        "name": "Uroševac (Ferizaj)",
         "country_id": 248,
         "country_code": "XK",
         "country_name": "Kosovo",
@@ -24322,7 +24322,7 @@ const states = [
     },
     {
         "id": 3030,
-        "name": "Berea District",
+        "name": "Berea",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24333,7 +24333,7 @@ const states = [
     },
     {
         "id": 3029,
-        "name": "Butha-Buthe District",
+        "name": "Butha-Buthe",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24344,7 +24344,7 @@ const states = [
     },
     {
         "id": 3026,
-        "name": "Leribe District",
+        "name": "Leribe",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24355,7 +24355,7 @@ const states = [
     },
     {
         "id": 3022,
-        "name": "Mafeteng District",
+        "name": "Mafeteng",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24366,7 +24366,7 @@ const states = [
     },
     {
         "id": 3028,
-        "name": "Maseru District",
+        "name": "Maseru",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24377,7 +24377,7 @@ const states = [
     },
     {
         "id": 3023,
-        "name": "Mohale's Hoek District",
+        "name": "Mohale's Hoek",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24388,7 +24388,7 @@ const states = [
     },
     {
         "id": 3024,
-        "name": "Mokhotlong District",
+        "name": "Mokhotlong",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24399,7 +24399,7 @@ const states = [
     },
     {
         "id": 3025,
-        "name": "Qacha's Nek District",
+        "name": "Qacha's Nek",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24410,7 +24410,7 @@ const states = [
     },
     {
         "id": 3027,
-        "name": "Quthing District",
+        "name": "Quthing",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24421,7 +24421,7 @@ const states = [
     },
     {
         "id": 3031,
-        "name": "Thaba-Tseka District",
+        "name": "Thaba-Tseka",
         "country_id": 122,
         "country_code": "LS",
         "country_name": "Lesotho",
@@ -24597,7 +24597,7 @@ const states = [
     },
     {
         "id": 2964,
-        "name": "Al Wahat District",
+        "name": "Al Wahat",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24619,7 +24619,7 @@ const states = [
     },
     {
         "id": 2966,
-        "name": "Derna District",
+        "name": "Derna",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24630,7 +24630,7 @@ const states = [
     },
     {
         "id": 2969,
-        "name": "Ghat District",
+        "name": "Ghat",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24652,7 +24652,7 @@ const states = [
     },
     {
         "id": 2974,
-        "name": "Jabal al Gharbi District",
+        "name": "Jabal al Gharbi",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24685,7 +24685,7 @@ const states = [
     },
     {
         "id": 2972,
-        "name": "Kufra District",
+        "name": "Kufra",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24696,7 +24696,7 @@ const states = [
     },
     {
         "id": 2968,
-        "name": "Marj District",
+        "name": "Marj",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24707,7 +24707,7 @@ const states = [
     },
     {
         "id": 2978,
-        "name": "Misrata District",
+        "name": "Misrata",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24729,7 +24729,7 @@ const states = [
     },
     {
         "id": 2967,
-        "name": "Murzuq District",
+        "name": "Murzuq",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24740,7 +24740,7 @@ const states = [
     },
     {
         "id": 2976,
-        "name": "Nalut District",
+        "name": "Nalut",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24762,7 +24762,7 @@ const states = [
     },
     {
         "id": 2965,
-        "name": "Sabha District",
+        "name": "Sabha",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24773,7 +24773,7 @@ const states = [
     },
     {
         "id": 2977,
-        "name": "Sirte District",
+        "name": "Sirte",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24784,7 +24784,7 @@ const states = [
     },
     {
         "id": 2971,
-        "name": "Tripoli District",
+        "name": "Tripoli",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24795,7 +24795,7 @@ const states = [
     },
     {
         "id": 2973,
-        "name": "Wadi al Hayaa District",
+        "name": "Wadi al Hayaa",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24806,7 +24806,7 @@ const states = [
     },
     {
         "id": 2975,
-        "name": "Wadi al Shatii District",
+        "name": "Wadi al Shatii",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24817,7 +24817,7 @@ const states = [
     },
     {
         "id": 2963,
-        "name": "Zawiya District",
+        "name": "Zawiya",
         "country_id": 124,
         "country_code": "LY",
         "country_name": "Libya",
@@ -24949,7 +24949,7 @@ const states = [
     },
     {
         "id": 1561,
-        "name": "Akmenė District Municipality",
+        "name": "Akmenė Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -24982,7 +24982,7 @@ const states = [
     },
     {
         "id": 1599,
-        "name": "Alytus District Municipality",
+        "name": "Alytus Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25004,7 +25004,7 @@ const states = [
     },
     {
         "id": 1566,
-        "name": "Biržai District Municipality",
+        "name": "Biržai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25037,7 +25037,7 @@ const states = [
     },
     {
         "id": 1562,
-        "name": "Ignalina District Municipality",
+        "name": "Ignalina Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25048,7 +25048,7 @@ const states = [
     },
     {
         "id": 1567,
-        "name": "Jonava District Municipality",
+        "name": "Jonava Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25059,7 +25059,7 @@ const states = [
     },
     {
         "id": 1581,
-        "name": "Joniškis District Municipality",
+        "name": "Joniškis Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25070,7 +25070,7 @@ const states = [
     },
     {
         "id": 1555,
-        "name": "Jurbarkas District Municipality",
+        "name": "Jurbarkas Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25081,7 +25081,7 @@ const states = [
     },
     {
         "id": 1583,
-        "name": "Kaišiadorys District Municipality",
+        "name": "Kaišiadorys Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25125,7 +25125,7 @@ const states = [
     },
     {
         "id": 1565,
-        "name": "Kaunas District Municipality",
+        "name": "Kaunas Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25147,7 +25147,7 @@ const states = [
     },
     {
         "id": 1584,
-        "name": "Kėdainiai District Municipality",
+        "name": "Kėdainiai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25158,7 +25158,7 @@ const states = [
     },
     {
         "id": 1618,
-        "name": "Kelmė District Municipality",
+        "name": "Kelmė Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25191,7 +25191,7 @@ const states = [
     },
     {
         "id": 1604,
-        "name": "Klaipėda District Municipality",
+        "name": "Klaipėda Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25202,7 +25202,7 @@ const states = [
     },
     {
         "id": 1571,
-        "name": "Kretinga District Municipality",
+        "name": "Kretinga Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25213,7 +25213,7 @@ const states = [
     },
     {
         "id": 1585,
-        "name": "Kupiškis District Municipality",
+        "name": "Kupiškis Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25224,7 +25224,7 @@ const states = [
     },
     {
         "id": 1611,
-        "name": "Lazdijai District Municipality",
+        "name": "Lazdijai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25257,7 +25257,7 @@ const states = [
     },
     {
         "id": 1557,
-        "name": "Mažeikiai District Municipality",
+        "name": "Mažeikiai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25268,7 +25268,7 @@ const states = [
     },
     {
         "id": 1582,
-        "name": "Molėtai District Municipality",
+        "name": "Molėtai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25301,7 +25301,7 @@ const states = [
     },
     {
         "id": 1595,
-        "name": "Pakruojis District Municipality",
+        "name": "Pakruojis Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25345,7 +25345,7 @@ const states = [
     },
     {
         "id": 1614,
-        "name": "Panevėžys District Municipality",
+        "name": "Panevėžys Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25356,7 +25356,7 @@ const states = [
     },
     {
         "id": 1616,
-        "name": "Pasvalys District Municipality",
+        "name": "Pasvalys Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25367,7 +25367,7 @@ const states = [
     },
     {
         "id": 1553,
-        "name": "Plungė District Municipality",
+        "name": "Plungė Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25378,7 +25378,7 @@ const states = [
     },
     {
         "id": 1578,
-        "name": "Prienai District Municipality",
+        "name": "Prienai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25389,7 +25389,7 @@ const states = [
     },
     {
         "id": 1568,
-        "name": "Radviliškis District Municipality",
+        "name": "Radviliškis Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25400,7 +25400,7 @@ const states = [
     },
     {
         "id": 1587,
-        "name": "Raseiniai District Municipality",
+        "name": "Raseiniai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25422,7 +25422,7 @@ const states = [
     },
     {
         "id": 1615,
-        "name": "Rokiškis District Municipality",
+        "name": "Rokiškis Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25433,7 +25433,7 @@ const states = [
     },
     {
         "id": 1576,
-        "name": "Šakiai District Municipality",
+        "name": "Šakiai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25444,7 +25444,7 @@ const states = [
     },
     {
         "id": 1577,
-        "name": "Šalčininkai District Municipality",
+        "name": "Šalčininkai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25477,7 +25477,7 @@ const states = [
     },
     {
         "id": 1554,
-        "name": "Šiauliai District Municipality",
+        "name": "Šiauliai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25488,7 +25488,7 @@ const states = [
     },
     {
         "id": 1613,
-        "name": "Šilalė District Municipality",
+        "name": "Šilalė Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25499,7 +25499,7 @@ const states = [
     },
     {
         "id": 1607,
-        "name": "Šilutė District Municipality",
+        "name": "Šilutė Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25510,7 +25510,7 @@ const states = [
     },
     {
         "id": 1594,
-        "name": "Širvintos District Municipality",
+        "name": "Širvintos Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25521,7 +25521,7 @@ const states = [
     },
     {
         "id": 1617,
-        "name": "Skuodas District Municipality",
+        "name": "Skuodas Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25532,7 +25532,7 @@ const states = [
     },
     {
         "id": 1560,
-        "name": "Švenčionys District Municipality",
+        "name": "Švenčionys Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25554,7 +25554,7 @@ const states = [
     },
     {
         "id": 1572,
-        "name": "Tauragė District Municipality",
+        "name": "Tauragė Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25576,7 +25576,7 @@ const states = [
     },
     {
         "id": 1608,
-        "name": "Telšiai District Municipality",
+        "name": "Telšiai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25587,7 +25587,7 @@ const states = [
     },
     {
         "id": 1593,
-        "name": "Trakai District Municipality",
+        "name": "Trakai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25598,7 +25598,7 @@ const states = [
     },
     {
         "id": 1596,
-        "name": "Ukmergė District Municipality",
+        "name": "Ukmergė Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25620,7 +25620,7 @@ const states = [
     },
     {
         "id": 1598,
-        "name": "Utena District Municipality",
+        "name": "Utena Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25631,7 +25631,7 @@ const states = [
     },
     {
         "id": 1602,
-        "name": "Varėna District Municipality",
+        "name": "Varėna Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25642,7 +25642,7 @@ const states = [
     },
     {
         "id": 1620,
-        "name": "Vilkaviškis District Municipality",
+        "name": "Vilkaviškis Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25675,7 +25675,7 @@ const states = [
     },
     {
         "id": 1592,
-        "name": "Vilnius District Municipality",
+        "name": "Vilnius Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25697,7 +25697,7 @@ const states = [
     },
     {
         "id": 1619,
-        "name": "Zarasai District Municipality",
+        "name": "Zarasai Municipality",
         "country_id": 126,
         "country_code": "LT",
         "country_name": "Lithuania",
@@ -25840,7 +25840,7 @@ const states = [
     },
     {
         "id": 1524,
-        "name": "Diekirch District",
+        "name": "Diekirch",
         "country_id": 127,
         "country_code": "LU",
         "country_name": "Luxembourg",
@@ -25851,7 +25851,7 @@ const states = [
     },
     {
         "id": 1520,
-        "name": "Grevenmacher District",
+        "name": "Grevenmacher",
         "country_id": 127,
         "country_code": "LU",
         "country_name": "Luxembourg",
@@ -25862,7 +25862,7 @@ const states = [
     },
     {
         "id": 1514,
-        "name": "Luxembourg District",
+        "name": "Luxembourg",
         "country_id": 127,
         "country_code": "LU",
         "country_name": "Luxembourg",
@@ -25939,7 +25939,7 @@ const states = [
     },
     {
         "id": 3096,
-        "name": "Balaka District",
+        "name": "Balaka",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -25950,7 +25950,7 @@ const states = [
     },
     {
         "id": 3102,
-        "name": "Blantyre District",
+        "name": "Blantyre",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -25972,7 +25972,7 @@ const states = [
     },
     {
         "id": 3107,
-        "name": "Chikwawa District",
+        "name": "Chikwawa",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -25983,7 +25983,7 @@ const states = [
     },
     {
         "id": 3109,
-        "name": "Chiradzulu District",
+        "name": "Chiradzulu",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -25994,7 +25994,7 @@ const states = [
     },
     {
         "id": 3087,
-        "name": "Chitipa district",
+        "name": "Chitipa",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26005,7 +26005,7 @@ const states = [
     },
     {
         "id": 3097,
-        "name": "Dedza District",
+        "name": "Dedza",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26016,7 +26016,7 @@ const states = [
     },
     {
         "id": 3090,
-        "name": "Dowa District",
+        "name": "Dowa",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26027,7 +26027,7 @@ const states = [
     },
     {
         "id": 3091,
-        "name": "Karonga District",
+        "name": "Karonga",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26038,7 +26038,7 @@ const states = [
     },
     {
         "id": 3094,
-        "name": "Kasungu District",
+        "name": "Kasungu",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26049,7 +26049,7 @@ const states = [
     },
     {
         "id": 3093,
-        "name": "Likoma District",
+        "name": "Likoma",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26060,7 +26060,7 @@ const states = [
     },
     {
         "id": 3101,
-        "name": "Lilongwe District",
+        "name": "Lilongwe",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26071,7 +26071,7 @@ const states = [
     },
     {
         "id": 3082,
-        "name": "Machinga District",
+        "name": "Machinga",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26082,7 +26082,7 @@ const states = [
     },
     {
         "id": 3110,
-        "name": "Mangochi District",
+        "name": "Mangochi",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26093,7 +26093,7 @@ const states = [
     },
     {
         "id": 3099,
-        "name": "Mchinji District",
+        "name": "Mchinji",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26104,7 +26104,7 @@ const states = [
     },
     {
         "id": 3103,
-        "name": "Mulanje District",
+        "name": "Mulanje",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26115,7 +26115,7 @@ const states = [
     },
     {
         "id": 3084,
-        "name": "Mwanza District",
+        "name": "Mwanza",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26126,7 +26126,7 @@ const states = [
     },
     {
         "id": 3104,
-        "name": "Mzimba District",
+        "name": "Mzimba",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26137,7 +26137,7 @@ const states = [
     },
     {
         "id": 3095,
-        "name": "Nkhata Bay District",
+        "name": "Nkhata Bay",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26148,7 +26148,7 @@ const states = [
     },
     {
         "id": 3100,
-        "name": "Nkhotakota District",
+        "name": "Nkhotakota",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26170,7 +26170,7 @@ const states = [
     },
     {
         "id": 3085,
-        "name": "Nsanje District",
+        "name": "Nsanje",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26181,7 +26181,7 @@ const states = [
     },
     {
         "id": 3088,
-        "name": "Ntcheu District",
+        "name": "Ntcheu",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26192,7 +26192,7 @@ const states = [
     },
     {
         "id": 3111,
-        "name": "Ntchisi District",
+        "name": "Ntchisi",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26203,7 +26203,7 @@ const states = [
     },
     {
         "id": 3108,
-        "name": "Phalombe District",
+        "name": "Phalombe",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26214,7 +26214,7 @@ const states = [
     },
     {
         "id": 3089,
-        "name": "Rumphi District",
+        "name": "Rumphi",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26225,7 +26225,7 @@ const states = [
     },
     {
         "id": 3086,
-        "name": "Salima District",
+        "name": "Salima",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26247,7 +26247,7 @@ const states = [
     },
     {
         "id": 3098,
-        "name": "Thyolo District",
+        "name": "Thyolo",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -26258,7 +26258,7 @@ const states = [
     },
     {
         "id": 3083,
-        "name": "Zomba District",
+        "name": "Zomba",
         "country_id": 131,
         "country_code": "MW",
         "country_name": "Malawi",
@@ -27979,7 +27979,7 @@ const states = [
         "country_code": "MX",
         "country_name": "Mexico",
         "state_code": "CMX",
-        "type": "federal district",
+        "type": "federal",
         "latitude": "19.43260770",
         "longitude": "-99.13320800"
     },
@@ -28304,7 +28304,7 @@ const states = [
     },
     {
         "id": 4368,
-        "name": "Anenii Noi District",
+        "name": "Anenii Noi",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28326,7 +28326,7 @@ const states = [
     },
     {
         "id": 4379,
-        "name": "Basarabeasca District",
+        "name": "Basarabeasca",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28348,7 +28348,7 @@ const states = [
     },
     {
         "id": 4375,
-        "name": "Briceni District",
+        "name": "Briceni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28359,7 +28359,7 @@ const states = [
     },
     {
         "id": 4391,
-        "name": "Cahul District",
+        "name": "Cahul",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28370,7 +28370,7 @@ const states = [
     },
     {
         "id": 4366,
-        "name": "Călărași District",
+        "name": "Călărași",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28381,7 +28381,7 @@ const states = [
     },
     {
         "id": 4380,
-        "name": "Cantemir District",
+        "name": "Cantemir",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28392,7 +28392,7 @@ const states = [
     },
     {
         "id": 4365,
-        "name": "Căușeni District",
+        "name": "Căușeni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28414,7 +28414,7 @@ const states = [
     },
     {
         "id": 4360,
-        "name": "Cimișlia District",
+        "name": "Cimișlia",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28425,7 +28425,7 @@ const states = [
     },
     {
         "id": 4390,
-        "name": "Criuleni District",
+        "name": "Criuleni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28436,7 +28436,7 @@ const states = [
     },
     {
         "id": 4384,
-        "name": "Dondușeni District",
+        "name": "Dondușeni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28447,7 +28447,7 @@ const states = [
     },
     {
         "id": 4392,
-        "name": "Drochia District",
+        "name": "Drochia",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28458,7 +28458,7 @@ const states = [
     },
     {
         "id": 4383,
-        "name": "Dubăsari District",
+        "name": "Dubăsari",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28469,7 +28469,7 @@ const states = [
     },
     {
         "id": 4387,
-        "name": "Edineț District",
+        "name": "Edineț",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28480,7 +28480,7 @@ const states = [
     },
     {
         "id": 4381,
-        "name": "Fălești District",
+        "name": "Fălești",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28491,7 +28491,7 @@ const states = [
     },
     {
         "id": 4370,
-        "name": "Florești District",
+        "name": "Florești",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28513,7 +28513,7 @@ const states = [
     },
     {
         "id": 4367,
-        "name": "Glodeni District",
+        "name": "Glodeni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28524,7 +28524,7 @@ const states = [
     },
     {
         "id": 4382,
-        "name": "Hîncești District",
+        "name": "Hîncești",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28535,7 +28535,7 @@ const states = [
     },
     {
         "id": 4369,
-        "name": "Ialoveni District",
+        "name": "Ialoveni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28546,7 +28546,7 @@ const states = [
     },
     {
         "id": 4363,
-        "name": "Nisporeni District",
+        "name": "Nisporeni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28557,7 +28557,7 @@ const states = [
     },
     {
         "id": 4389,
-        "name": "Ocnița District",
+        "name": "Ocnița",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28568,7 +28568,7 @@ const states = [
     },
     {
         "id": 4361,
-        "name": "Orhei District",
+        "name": "Orhei",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28579,7 +28579,7 @@ const states = [
     },
     {
         "id": 4394,
-        "name": "Rezina District",
+        "name": "Rezina",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28590,7 +28590,7 @@ const states = [
     },
     {
         "id": 4376,
-        "name": "Rîșcani District",
+        "name": "Rîșcani",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28601,7 +28601,7 @@ const states = [
     },
     {
         "id": 4364,
-        "name": "Sîngerei District",
+        "name": "Sîngerei",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28612,7 +28612,7 @@ const states = [
     },
     {
         "id": 4388,
-        "name": "Șoldănești District",
+        "name": "Șoldănești",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28623,7 +28623,7 @@ const states = [
     },
     {
         "id": 4374,
-        "name": "Soroca District",
+        "name": "Soroca",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28634,7 +28634,7 @@ const states = [
     },
     {
         "id": 4378,
-        "name": "Ștefan Vodă District",
+        "name": "Ștefan Vodă",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28645,7 +28645,7 @@ const states = [
     },
     {
         "id": 4377,
-        "name": "Strășeni District",
+        "name": "Strășeni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28656,7 +28656,7 @@ const states = [
     },
     {
         "id": 4372,
-        "name": "Taraclia District",
+        "name": "Taraclia",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28667,7 +28667,7 @@ const states = [
     },
     {
         "id": 4371,
-        "name": "Telenești District",
+        "name": "Telenești",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -28689,7 +28689,7 @@ const states = [
     },
     {
         "id": 4386,
-        "name": "Ungheni District",
+        "name": "Ungheni",
         "country_id": 144,
         "country_code": "MD",
         "country_name": "Moldova",
@@ -30603,7 +30603,7 @@ const states = [
     },
     {
         "id": 4656,
-        "name": "Aiwo District",
+        "name": "Aiwo",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30614,7 +30614,7 @@ const states = [
     },
     {
         "id": 4658,
-        "name": "Anabar District",
+        "name": "Anabar",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30625,7 +30625,7 @@ const states = [
     },
     {
         "id": 4667,
-        "name": "Anetan District",
+        "name": "Anetan",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30636,7 +30636,7 @@ const states = [
     },
     {
         "id": 4663,
-        "name": "Anibare District",
+        "name": "Anibare",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30647,7 +30647,7 @@ const states = [
     },
     {
         "id": 4660,
-        "name": "Baiti District",
+        "name": "Baiti",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30658,7 +30658,7 @@ const states = [
     },
     {
         "id": 4665,
-        "name": "Boe District",
+        "name": "Boe",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30669,7 +30669,7 @@ const states = [
     },
     {
         "id": 4662,
-        "name": "Buada District",
+        "name": "Buada",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30680,7 +30680,7 @@ const states = [
     },
     {
         "id": 4666,
-        "name": "Denigomodu District",
+        "name": "Denigomodu",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30691,7 +30691,7 @@ const states = [
     },
     {
         "id": 4654,
-        "name": "Ewa District",
+        "name": "Ewa",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30702,7 +30702,7 @@ const states = [
     },
     {
         "id": 4661,
-        "name": "Ijuw District",
+        "name": "Ijuw",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30713,7 +30713,7 @@ const states = [
     },
     {
         "id": 4657,
-        "name": "Meneng District",
+        "name": "Meneng",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30724,7 +30724,7 @@ const states = [
     },
     {
         "id": 4659,
-        "name": "Nibok District",
+        "name": "Nibok",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30735,7 +30735,7 @@ const states = [
     },
     {
         "id": 4655,
-        "name": "Uaboe District",
+        "name": "Uaboe",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -30746,7 +30746,7 @@ const states = [
     },
     {
         "id": 4664,
-        "name": "Yaren District",
+        "name": "Yaren",
         "country_id": 153,
         "country_code": "NR",
         "country_name": "Nauru",
@@ -31208,7 +31208,7 @@ const states = [
     },
     {
         "id": 4068,
-        "name": "Gisborne District",
+        "name": "Gisborne",
         "country_id": 158,
         "country_code": "NZ",
         "country_name": "New Zealand",
@@ -31307,7 +31307,7 @@ const states = [
     },
     {
         "id": 4073,
-        "name": "Tasman District",
+        "name": "Tasman",
         "country_id": 158,
         "country_code": "NZ",
         "country_name": "New Zealand",
@@ -38556,7 +38556,7 @@ const states = [
     },
     {
         "id": 262,
-        "name": "Kigali district",
+        "name": "Kigali",
         "country_id": 183,
         "country_code": "RW",
         "country_name": "Rwanda",
@@ -39513,7 +39513,7 @@ const states = [
     },
     {
         "id": 3717,
-        "name": "Bor District",
+        "name": "Bor",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39524,7 +39524,7 @@ const states = [
     },
     {
         "id": 3732,
-        "name": "Braničevo District",
+        "name": "Braničevo",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39535,7 +39535,7 @@ const states = [
     },
     {
         "id": 3716,
-        "name": "Central Banat District",
+        "name": "Central Banat",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39546,7 +39546,7 @@ const states = [
     },
     {
         "id": 3715,
-        "name": "Jablanica District",
+        "name": "Jablanica",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39557,7 +39557,7 @@ const states = [
     },
     {
         "id": 3724,
-        "name": "Kolubara District",
+        "name": "Kolubara",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39568,7 +39568,7 @@ const states = [
     },
     {
         "id": 3719,
-        "name": "Mačva District",
+        "name": "Mačva",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39579,7 +39579,7 @@ const states = [
     },
     {
         "id": 3727,
-        "name": "Moravica District",
+        "name": "Moravica",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39590,7 +39590,7 @@ const states = [
     },
     {
         "id": 3722,
-        "name": "Nišava District",
+        "name": "Nišava",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39601,7 +39601,7 @@ const states = [
     },
     {
         "id": 3714,
-        "name": "North Bačka District",
+        "name": "North Bačka",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39612,7 +39612,7 @@ const states = [
     },
     {
         "id": 3736,
-        "name": "North Banat District",
+        "name": "North Banat",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39623,7 +39623,7 @@ const states = [
     },
     {
         "id": 3721,
-        "name": "Pčinja District",
+        "name": "Pčinja",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39634,7 +39634,7 @@ const states = [
     },
     {
         "id": 3712,
-        "name": "Pirot District",
+        "name": "Pirot",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39645,7 +39645,7 @@ const states = [
     },
     {
         "id": 3741,
-        "name": "Podunavlje District",
+        "name": "Podunavlje",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39656,7 +39656,7 @@ const states = [
     },
     {
         "id": 3737,
-        "name": "Pomoravlje District",
+        "name": "Pomoravlje",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39667,7 +39667,7 @@ const states = [
     },
     {
         "id": 3720,
-        "name": "Rasina District",
+        "name": "Rasina",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39678,7 +39678,7 @@ const states = [
     },
     {
         "id": 3725,
-        "name": "Raška District",
+        "name": "Raška",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39689,7 +39689,7 @@ const states = [
     },
     {
         "id": 3711,
-        "name": "South Bačka District",
+        "name": "South Bačka",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39700,7 +39700,7 @@ const states = [
     },
     {
         "id": 3713,
-        "name": "South Banat District",
+        "name": "South Banat",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39711,7 +39711,7 @@ const states = [
     },
     {
         "id": 3740,
-        "name": "Srem District",
+        "name": "Srem",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39722,7 +39722,7 @@ const states = [
     },
     {
         "id": 3734,
-        "name": "Šumadija District",
+        "name": "Šumadija",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39733,7 +39733,7 @@ const states = [
     },
     {
         "id": 3718,
-        "name": "Toplica District",
+        "name": "Toplica",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39755,7 +39755,7 @@ const states = [
     },
     {
         "id": 3726,
-        "name": "West Bačka District",
+        "name": "West Bačka",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39766,7 +39766,7 @@ const states = [
     },
     {
         "id": 3731,
-        "name": "Zaječar District",
+        "name": "Zaječar",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -39777,7 +39777,7 @@ const states = [
     },
     {
         "id": 3729,
-        "name": "Zlatibor District",
+        "name": "Zlatibor",
         "country_id": 196,
         "country_code": "RS",
         "country_name": "Serbia",
@@ -43825,7 +43825,7 @@ const states = [
     },
     {
         "id": 2799,
-        "name": "Ampara District",
+        "name": "Ampara",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43836,7 +43836,7 @@ const states = [
     },
     {
         "id": 2816,
-        "name": "Anuradhapura District",
+        "name": "Anuradhapura",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43847,7 +43847,7 @@ const states = [
     },
     {
         "id": 2790,
-        "name": "Badulla District",
+        "name": "Badulla",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43858,7 +43858,7 @@ const states = [
     },
     {
         "id": 2818,
-        "name": "Batticaloa District",
+        "name": "Batticaloa",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43880,7 +43880,7 @@ const states = [
     },
     {
         "id": 2815,
-        "name": "Colombo District",
+        "name": "Colombo",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43902,7 +43902,7 @@ const states = [
     },
     {
         "id": 2792,
-        "name": "Galle District",
+        "name": "Galle",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43913,7 +43913,7 @@ const states = [
     },
     {
         "id": 2804,
-        "name": "Gampaha District",
+        "name": "Gampaha",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43924,7 +43924,7 @@ const states = [
     },
     {
         "id": 2791,
-        "name": "Hambantota District",
+        "name": "Hambantota",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43935,7 +43935,7 @@ const states = [
     },
     {
         "id": 2787,
-        "name": "Jaffna District",
+        "name": "Jaffna",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43946,7 +43946,7 @@ const states = [
     },
     {
         "id": 2789,
-        "name": "Kalutara District",
+        "name": "Kalutara",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43957,7 +43957,7 @@ const states = [
     },
     {
         "id": 2788,
-        "name": "Kandy District",
+        "name": "Kandy",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43968,7 +43968,7 @@ const states = [
     },
     {
         "id": 2797,
-        "name": "Kegalle District",
+        "name": "Kegalle",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43979,7 +43979,7 @@ const states = [
     },
     {
         "id": 2793,
-        "name": "Kilinochchi District",
+        "name": "Kilinochchi",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -43990,7 +43990,7 @@ const states = [
     },
     {
         "id": 2805,
-        "name": "Mannar District",
+        "name": "Mannar",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44001,7 +44001,7 @@ const states = [
     },
     {
         "id": 2810,
-        "name": "Matale District",
+        "name": "Matale",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44012,7 +44012,7 @@ const states = [
     },
     {
         "id": 2806,
-        "name": "Matara District",
+        "name": "Matara",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44023,7 +44023,7 @@ const states = [
     },
     {
         "id": 2819,
-        "name": "Monaragala District",
+        "name": "Monaragala",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44034,7 +44034,7 @@ const states = [
     },
     {
         "id": 2814,
-        "name": "Mullaitivu District",
+        "name": "Mullaitivu",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44078,7 +44078,7 @@ const states = [
     },
     {
         "id": 2794,
-        "name": "Nuwara Eliya District",
+        "name": "Nuwara Eliya",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44089,7 +44089,7 @@ const states = [
     },
     {
         "id": 2812,
-        "name": "Polonnaruwa District",
+        "name": "Polonnaruwa",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44100,7 +44100,7 @@ const states = [
     },
     {
         "id": 2796,
-        "name": "Puttalam District",
+        "name": "Puttalam",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44111,7 +44111,7 @@ const states = [
     },
     {
         "id": 2807,
-        "name": "Ratnapura district",
+        "name": "Ratnapura",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44144,7 +44144,7 @@ const states = [
     },
     {
         "id": 2795,
-        "name": "Trincomalee District",
+        "name": "Trincomalee",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44166,7 +44166,7 @@ const states = [
     },
     {
         "id": 2809,
-        "name": "Vavuniya District",
+        "name": "Vavuniya",
         "country_id": 208,
         "country_code": "LK",
         "country_name": "Sri Lanka",
@@ -44386,7 +44386,7 @@ const states = [
     },
     {
         "id": 2846,
-        "name": "Brokopondo District",
+        "name": "Brokopondo",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44397,7 +44397,7 @@ const states = [
     },
     {
         "id": 2839,
-        "name": "Commewijne District",
+        "name": "Commewijne",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44408,7 +44408,7 @@ const states = [
     },
     {
         "id": 2842,
-        "name": "Coronie District",
+        "name": "Coronie",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44419,7 +44419,7 @@ const states = [
     },
     {
         "id": 2845,
-        "name": "Marowijne District",
+        "name": "Marowijne",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44430,7 +44430,7 @@ const states = [
     },
     {
         "id": 2840,
-        "name": "Nickerie District",
+        "name": "Nickerie",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44441,7 +44441,7 @@ const states = [
     },
     {
         "id": 2841,
-        "name": "Para District",
+        "name": "Para",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44452,7 +44452,7 @@ const states = [
     },
     {
         "id": 2843,
-        "name": "Paramaribo District",
+        "name": "Paramaribo",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44463,7 +44463,7 @@ const states = [
     },
     {
         "id": 2848,
-        "name": "Saramacca District",
+        "name": "Saramacca",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44474,7 +44474,7 @@ const states = [
     },
     {
         "id": 2847,
-        "name": "Sipaliwini District",
+        "name": "Sipaliwini",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44485,7 +44485,7 @@ const states = [
     },
     {
         "id": 2844,
-        "name": "Wanica District",
+        "name": "Wanica",
         "country_id": 210,
         "country_code": "SR",
         "country_name": "Suriname",
@@ -44496,7 +44496,7 @@ const states = [
     },
     {
         "id": 969,
-        "name": "Hhohho District",
+        "name": "Hhohho",
         "country_id": 212,
         "country_code": "SZ",
         "country_name": "Swaziland",
@@ -44507,7 +44507,7 @@ const states = [
     },
     {
         "id": 970,
-        "name": "Lubombo District",
+        "name": "Lubombo",
         "country_id": 212,
         "country_code": "SZ",
         "country_name": "Swaziland",
@@ -44518,7 +44518,7 @@ const states = [
     },
     {
         "id": 968,
-        "name": "Manzini District",
+        "name": "Manzini",
         "country_id": 212,
         "country_code": "SZ",
         "country_name": "Swaziland",
@@ -44529,7 +44529,7 @@ const states = [
     },
     {
         "id": 971,
-        "name": "Shiselweni District",
+        "name": "Shiselweni",
         "country_id": 212,
         "country_code": "SZ",
         "country_name": "Swaziland",
@@ -46971,7 +46971,7 @@ const states = [
     },
     {
         "id": 3633,
-        "name": "Mayaguana District",
+        "name": "Mayaguana",
         "country_id": 17,
         "country_code": "BS",
         "country_name": "The Bahamas",
@@ -47059,7 +47059,7 @@ const states = [
     },
     {
         "id": 3600,
-        "name": "Rum Cay District",
+        "name": "Rum Cay",
         "country_id": 17,
         "country_code": "BS",
         "country_name": "The Bahamas",
@@ -48753,7 +48753,7 @@ const states = [
     },
     {
         "id": 329,
-        "name": "Abim District",
+        "name": "Abim",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48764,7 +48764,7 @@ const states = [
     },
     {
         "id": 361,
-        "name": "Adjumani District",
+        "name": "Adjumani",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48775,7 +48775,7 @@ const states = [
     },
     {
         "id": 392,
-        "name": "Agago District",
+        "name": "Agago",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48786,7 +48786,7 @@ const states = [
     },
     {
         "id": 344,
-        "name": "Alebtong District",
+        "name": "Alebtong",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48797,7 +48797,7 @@ const states = [
     },
     {
         "id": 416,
-        "name": "Amolatar District",
+        "name": "Amolatar",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48808,7 +48808,7 @@ const states = [
     },
     {
         "id": 353,
-        "name": "Amudat District",
+        "name": "Amudat",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48819,7 +48819,7 @@ const states = [
     },
     {
         "id": 352,
-        "name": "Amuria District",
+        "name": "Amuria",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48830,7 +48830,7 @@ const states = [
     },
     {
         "id": 335,
-        "name": "Amuru District",
+        "name": "Amuru",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48841,7 +48841,7 @@ const states = [
     },
     {
         "id": 328,
-        "name": "Apac District",
+        "name": "Apac",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48852,7 +48852,7 @@ const states = [
     },
     {
         "id": 447,
-        "name": "Arua District",
+        "name": "Arua",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48863,7 +48863,7 @@ const states = [
     },
     {
         "id": 441,
-        "name": "Budaka District",
+        "name": "Budaka",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48874,7 +48874,7 @@ const states = [
     },
     {
         "id": 349,
-        "name": "Bududa District",
+        "name": "Bududa",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48885,7 +48885,7 @@ const states = [
     },
     {
         "id": 387,
-        "name": "Bugiri District",
+        "name": "Bugiri",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48896,7 +48896,7 @@ const states = [
     },
     {
         "id": 391,
-        "name": "Buhweju District",
+        "name": "Buhweju",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48907,7 +48907,7 @@ const states = [
     },
     {
         "id": 377,
-        "name": "Buikwe District",
+        "name": "Buikwe",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48918,7 +48918,7 @@ const states = [
     },
     {
         "id": 343,
-        "name": "Bukedea District",
+        "name": "Bukedea",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48929,7 +48929,7 @@ const states = [
     },
     {
         "id": 375,
-        "name": "Bukomansimbi District",
+        "name": "Bukomansimbi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48940,7 +48940,7 @@ const states = [
     },
     {
         "id": 385,
-        "name": "Bukwo District",
+        "name": "Bukwo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48951,7 +48951,7 @@ const states = [
     },
     {
         "id": 428,
-        "name": "Bulambuli District",
+        "name": "Bulambuli",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48962,7 +48962,7 @@ const states = [
     },
     {
         "id": 389,
-        "name": "Buliisa District",
+        "name": "Buliisa",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48973,7 +48973,7 @@ const states = [
     },
     {
         "id": 419,
-        "name": "Bundibugyo District",
+        "name": "Bundibugyo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48984,7 +48984,7 @@ const states = [
     },
     {
         "id": 381,
-        "name": "Bunyangabu District",
+        "name": "Bunyangabu",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -48995,7 +48995,7 @@ const states = [
     },
     {
         "id": 386,
-        "name": "Bushenyi District",
+        "name": "Bushenyi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49006,7 +49006,7 @@ const states = [
     },
     {
         "id": 431,
-        "name": "Busia District",
+        "name": "Busia",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49017,7 +49017,7 @@ const states = [
     },
     {
         "id": 365,
-        "name": "Butaleja District",
+        "name": "Butaleja",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49028,7 +49028,7 @@ const states = [
     },
     {
         "id": 384,
-        "name": "Butambala District",
+        "name": "Butambala",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49039,7 +49039,7 @@ const states = [
     },
     {
         "id": 388,
-        "name": "Butebo District",
+        "name": "Butebo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49050,7 +49050,7 @@ const states = [
     },
     {
         "id": 414,
-        "name": "Buvuma District",
+        "name": "Buvuma",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49061,7 +49061,7 @@ const states = [
     },
     {
         "id": 380,
-        "name": "Buyende District",
+        "name": "Buyende",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49083,7 +49083,7 @@ const states = [
     },
     {
         "id": 341,
-        "name": "Dokolo District",
+        "name": "Dokolo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49105,7 +49105,7 @@ const states = [
     },
     {
         "id": 366,
-        "name": "Gomba District",
+        "name": "Gomba",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49116,7 +49116,7 @@ const states = [
     },
     {
         "id": 413,
-        "name": "Gulu District",
+        "name": "Gulu",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49127,7 +49127,7 @@ const states = [
     },
     {
         "id": 339,
-        "name": "Ibanda District",
+        "name": "Ibanda",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49138,7 +49138,7 @@ const states = [
     },
     {
         "id": 340,
-        "name": "Iganga District",
+        "name": "Iganga",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49149,7 +49149,7 @@ const states = [
     },
     {
         "id": 383,
-        "name": "Isingiro District",
+        "name": "Isingiro",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49160,7 +49160,7 @@ const states = [
     },
     {
         "id": 367,
-        "name": "Jinja District",
+        "name": "Jinja",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49171,7 +49171,7 @@ const states = [
     },
     {
         "id": 434,
-        "name": "Kaabong District",
+        "name": "Kaabong",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49182,7 +49182,7 @@ const states = [
     },
     {
         "id": 426,
-        "name": "Kabale District",
+        "name": "Kabale",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49193,7 +49193,7 @@ const states = [
     },
     {
         "id": 326,
-        "name": "Kabarole District",
+        "name": "Kabarole",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49204,7 +49204,7 @@ const states = [
     },
     {
         "id": 336,
-        "name": "Kaberamaido District",
+        "name": "Kaberamaido",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49215,7 +49215,7 @@ const states = [
     },
     {
         "id": 403,
-        "name": "Kagadi District",
+        "name": "Kagadi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49226,7 +49226,7 @@ const states = [
     },
     {
         "id": 399,
-        "name": "Kakumiro District",
+        "name": "Kakumiro",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49237,7 +49237,7 @@ const states = [
     },
     {
         "id": 405,
-        "name": "Kalangala District",
+        "name": "Kalangala",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49248,7 +49248,7 @@ const states = [
     },
     {
         "id": 398,
-        "name": "Kaliro District",
+        "name": "Kaliro",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49259,7 +49259,7 @@ const states = [
     },
     {
         "id": 394,
-        "name": "Kalungu District",
+        "name": "Kalungu",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49270,7 +49270,7 @@ const states = [
     },
     {
         "id": 382,
-        "name": "Kampala District",
+        "name": "Kampala",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49281,7 +49281,7 @@ const states = [
     },
     {
         "id": 334,
-        "name": "Kamuli District",
+        "name": "Kamuli",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49292,7 +49292,7 @@ const states = [
     },
     {
         "id": 360,
-        "name": "Kamwenge District",
+        "name": "Kamwenge",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49303,7 +49303,7 @@ const states = [
     },
     {
         "id": 373,
-        "name": "Kanungu District",
+        "name": "Kanungu",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49314,7 +49314,7 @@ const states = [
     },
     {
         "id": 432,
-        "name": "Kapchorwa District",
+        "name": "Kapchorwa",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49325,7 +49325,7 @@ const states = [
     },
     {
         "id": 440,
-        "name": "Kasese District",
+        "name": "Kasese",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49336,7 +49336,7 @@ const states = [
     },
     {
         "id": 420,
-        "name": "Katakwi District",
+        "name": "Katakwi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49347,7 +49347,7 @@ const states = [
     },
     {
         "id": 368,
-        "name": "Kayunga District",
+        "name": "Kayunga",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49358,7 +49358,7 @@ const states = [
     },
     {
         "id": 436,
-        "name": "Kibaale District",
+        "name": "Kibaale",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49369,7 +49369,7 @@ const states = [
     },
     {
         "id": 347,
-        "name": "Kiboga District",
+        "name": "Kiboga",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49380,7 +49380,7 @@ const states = [
     },
     {
         "id": 338,
-        "name": "Kibuku District",
+        "name": "Kibuku",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49391,7 +49391,7 @@ const states = [
     },
     {
         "id": 355,
-        "name": "Kiruhura District",
+        "name": "Kiruhura",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49402,7 +49402,7 @@ const states = [
     },
     {
         "id": 346,
-        "name": "Kiryandongo District",
+        "name": "Kiryandongo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49413,7 +49413,7 @@ const states = [
     },
     {
         "id": 409,
-        "name": "Kisoro District",
+        "name": "Kisoro",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49424,7 +49424,7 @@ const states = [
     },
     {
         "id": 348,
-        "name": "Kitgum District",
+        "name": "Kitgum",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49435,7 +49435,7 @@ const states = [
     },
     {
         "id": 345,
-        "name": "Koboko District",
+        "name": "Koboko",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49446,7 +49446,7 @@ const states = [
     },
     {
         "id": 401,
-        "name": "Kole District",
+        "name": "Kole",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49457,7 +49457,7 @@ const states = [
     },
     {
         "id": 443,
-        "name": "Kotido District",
+        "name": "Kotido",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49468,7 +49468,7 @@ const states = [
     },
     {
         "id": 425,
-        "name": "Kumi District",
+        "name": "Kumi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49479,7 +49479,7 @@ const states = [
     },
     {
         "id": 369,
-        "name": "Kween District",
+        "name": "Kween",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49490,7 +49490,7 @@ const states = [
     },
     {
         "id": 325,
-        "name": "Kyankwanzi District",
+        "name": "Kyankwanzi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49501,7 +49501,7 @@ const states = [
     },
     {
         "id": 437,
-        "name": "Kyegegwa District",
+        "name": "Kyegegwa",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49512,7 +49512,7 @@ const states = [
     },
     {
         "id": 402,
-        "name": "Kyenjojo District",
+        "name": "Kyenjojo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49523,7 +49523,7 @@ const states = [
     },
     {
         "id": 448,
-        "name": "Kyotera District",
+        "name": "Kyotera",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49534,7 +49534,7 @@ const states = [
     },
     {
         "id": 411,
-        "name": "Lamwo District",
+        "name": "Lamwo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49545,7 +49545,7 @@ const states = [
     },
     {
         "id": 342,
-        "name": "Lira District",
+        "name": "Lira",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49556,7 +49556,7 @@ const states = [
     },
     {
         "id": 445,
-        "name": "Luuka District",
+        "name": "Luuka",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49567,7 +49567,7 @@ const states = [
     },
     {
         "id": 433,
-        "name": "Luwero District",
+        "name": "Luwero",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49578,7 +49578,7 @@ const states = [
     },
     {
         "id": 417,
-        "name": "Lwengo District",
+        "name": "Lwengo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49589,7 +49589,7 @@ const states = [
     },
     {
         "id": 376,
-        "name": "Lyantonde District",
+        "name": "Lyantonde",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49600,7 +49600,7 @@ const states = [
     },
     {
         "id": 438,
-        "name": "Manafwa District",
+        "name": "Manafwa",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49611,7 +49611,7 @@ const states = [
     },
     {
         "id": 421,
-        "name": "Maracha District",
+        "name": "Maracha",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49622,7 +49622,7 @@ const states = [
     },
     {
         "id": 356,
-        "name": "Masaka District",
+        "name": "Masaka",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49633,7 +49633,7 @@ const states = [
     },
     {
         "id": 354,
-        "name": "Masindi District",
+        "name": "Masindi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49644,7 +49644,7 @@ const states = [
     },
     {
         "id": 418,
-        "name": "Mayuge District",
+        "name": "Mayuge",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49655,7 +49655,7 @@ const states = [
     },
     {
         "id": 350,
-        "name": "Mbale District",
+        "name": "Mbale",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49666,7 +49666,7 @@ const states = [
     },
     {
         "id": 415,
-        "name": "Mbarara District",
+        "name": "Mbarara",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49677,7 +49677,7 @@ const states = [
     },
     {
         "id": 435,
-        "name": "Mitooma District",
+        "name": "Mitooma",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49688,7 +49688,7 @@ const states = [
     },
     {
         "id": 364,
-        "name": "Mityana District",
+        "name": "Mityana",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49699,7 +49699,7 @@ const states = [
     },
     {
         "id": 395,
-        "name": "Moroto District",
+        "name": "Moroto",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49710,7 +49710,7 @@ const states = [
     },
     {
         "id": 363,
-        "name": "Moyo District",
+        "name": "Moyo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49721,7 +49721,7 @@ const states = [
     },
     {
         "id": 327,
-        "name": "Mpigi District",
+        "name": "Mpigi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49732,7 +49732,7 @@ const states = [
     },
     {
         "id": 371,
-        "name": "Mubende District",
+        "name": "Mubende",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49743,7 +49743,7 @@ const states = [
     },
     {
         "id": 410,
-        "name": "Mukono District",
+        "name": "Mukono",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49754,7 +49754,7 @@ const states = [
     },
     {
         "id": 393,
-        "name": "Nakapiripirit District",
+        "name": "Nakapiripirit",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49765,7 +49765,7 @@ const states = [
     },
     {
         "id": 423,
-        "name": "Nakaseke District",
+        "name": "Nakaseke",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49776,7 +49776,7 @@ const states = [
     },
     {
         "id": 406,
-        "name": "Nakasongola District",
+        "name": "Nakasongola",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49787,7 +49787,7 @@ const states = [
     },
     {
         "id": 351,
-        "name": "Namayingo District",
+        "name": "Namayingo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49798,7 +49798,7 @@ const states = [
     },
     {
         "id": 400,
-        "name": "Namisindwa District",
+        "name": "Namisindwa",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49809,7 +49809,7 @@ const states = [
     },
     {
         "id": 337,
-        "name": "Namutumba District",
+        "name": "Namutumba",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49820,7 +49820,7 @@ const states = [
     },
     {
         "id": 430,
-        "name": "Napak District",
+        "name": "Napak",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49831,7 +49831,7 @@ const states = [
     },
     {
         "id": 446,
-        "name": "Nebbi District",
+        "name": "Nebbi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49842,7 +49842,7 @@ const states = [
     },
     {
         "id": 424,
-        "name": "Ngora District",
+        "name": "Ngora",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49864,7 +49864,7 @@ const states = [
     },
     {
         "id": 422,
-        "name": "Ntoroko District",
+        "name": "Ntoroko",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49875,7 +49875,7 @@ const states = [
     },
     {
         "id": 404,
-        "name": "Ntungamo District",
+        "name": "Ntungamo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49886,7 +49886,7 @@ const states = [
     },
     {
         "id": 378,
-        "name": "Nwoya District",
+        "name": "Nwoya",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49897,7 +49897,7 @@ const states = [
     },
     {
         "id": 374,
-        "name": "Omoro District",
+        "name": "Omoro",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49908,7 +49908,7 @@ const states = [
     },
     {
         "id": 390,
-        "name": "Otuke District",
+        "name": "Otuke",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49919,7 +49919,7 @@ const states = [
     },
     {
         "id": 397,
-        "name": "Oyam District",
+        "name": "Oyam",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49930,7 +49930,7 @@ const states = [
     },
     {
         "id": 408,
-        "name": "Pader District",
+        "name": "Pader",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49941,7 +49941,7 @@ const states = [
     },
     {
         "id": 357,
-        "name": "Pakwach District",
+        "name": "Pakwach",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49952,7 +49952,7 @@ const states = [
     },
     {
         "id": 412,
-        "name": "Pallisa District",
+        "name": "Pallisa",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49963,7 +49963,7 @@ const states = [
     },
     {
         "id": 439,
-        "name": "Rakai District",
+        "name": "Rakai",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49974,7 +49974,7 @@ const states = [
     },
     {
         "id": 358,
-        "name": "Rubanda District",
+        "name": "Rubanda",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49985,7 +49985,7 @@ const states = [
     },
     {
         "id": 442,
-        "name": "Rubirizi District",
+        "name": "Rubirizi",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -49996,7 +49996,7 @@ const states = [
     },
     {
         "id": 331,
-        "name": "Rukiga District",
+        "name": "Rukiga",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50007,7 +50007,7 @@ const states = [
     },
     {
         "id": 324,
-        "name": "Rukungiri District",
+        "name": "Rukungiri",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50018,7 +50018,7 @@ const states = [
     },
     {
         "id": 427,
-        "name": "Sembabule District",
+        "name": "Sembabule",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50029,7 +50029,7 @@ const states = [
     },
     {
         "id": 333,
-        "name": "Serere District",
+        "name": "Serere",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50040,7 +50040,7 @@ const states = [
     },
     {
         "id": 407,
-        "name": "Sheema District",
+        "name": "Sheema",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50051,7 +50051,7 @@ const states = [
     },
     {
         "id": 429,
-        "name": "Sironko District",
+        "name": "Sironko",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50062,7 +50062,7 @@ const states = [
     },
     {
         "id": 444,
-        "name": "Soroti District",
+        "name": "Soroti",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50073,7 +50073,7 @@ const states = [
     },
     {
         "id": 359,
-        "name": "Tororo District",
+        "name": "Tororo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50084,7 +50084,7 @@ const states = [
     },
     {
         "id": 362,
-        "name": "Wakiso District",
+        "name": "Wakiso",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50106,7 +50106,7 @@ const states = [
     },
     {
         "id": 330,
-        "name": "Yumbe District",
+        "name": "Yumbe",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50117,7 +50117,7 @@ const states = [
     },
     {
         "id": 379,
-        "name": "Zombo District",
+        "name": "Zombo",
         "country_id": 229,
         "country_code": "UG",
         "country_name": "Uganda",
@@ -50590,7 +50590,7 @@ const states = [
     },
     {
         "id": 2331,
-        "name": "Armagh City and District Council",
+        "name": "Armagh City and Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -50689,7 +50689,7 @@ const states = [
     },
     {
         "id": 2311,
-        "name": "Belfast district",
+        "name": "Belfast",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -51173,7 +51173,7 @@ const states = [
     },
     {
         "id": 2445,
-        "name": "Cookstown District Council",
+        "name": "Cookstown Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -51327,7 +51327,7 @@ const states = [
     },
     {
         "id": 2304,
-        "name": "Down District Council",
+        "name": "Down Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -51503,7 +51503,7 @@ const states = [
     },
     {
         "id": 2531,
-        "name": "Fermanagh District Council",
+        "name": "Fermanagh Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -52119,7 +52119,7 @@ const states = [
     },
     {
         "id": 2322,
-        "name": "Magherafelt District Council",
+        "name": "Magherafelt Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -52251,7 +52251,7 @@ const states = [
     },
     {
         "id": 2348,
-        "name": "Moyle District Council",
+        "name": "Moyle Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -52295,7 +52295,7 @@ const states = [
     },
     {
         "id": 2350,
-        "name": "Newry and Mourne District Council",
+        "name": "Newry and Mourne Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -52482,7 +52482,7 @@ const states = [
     },
     {
         "id": 2314,
-        "name": "Omagh District Council",
+        "name": "Omagh Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -52922,7 +52922,7 @@ const states = [
     },
     {
         "id": 2393,
-        "name": "Strabane District Council",
+        "name": "Strabane Council",
         "country_id": 232,
         "country_code": "GB",
         "country_name": "United Kingdom",
@@ -54577,7 +54577,7 @@ const states = [
         "country_code": "VE",
         "country_name": "Venezuela",
         "state_code": "A",
-        "type": "capital district",
+        "type": "capital",
         "latitude": "41.26148460",
         "longitude": "-95.93108070"
     },
