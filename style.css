@@ -9,6 +9,8 @@
     /* color: #fffacc; */
 }
 
+
+
 :root {
     --dark-secondary: #19875440;
     /* --light-primary: #19875420; */
@@ -34,9 +36,9 @@ body {
     height: 100vh;
     width: 100%;
     padding: 25px;
-    /* background-color: var(--light-primary); */
+    background-color: #00000020;
     /* background: linear-gradient(133deg, #0079DF, #CF483A); */
-    background: linear-gradient(180deg, var(--dark-primary), var(--light-primary));
+    /* background: linear-gradient(180deg, var(--dark-primary), var(--light-primary)); */
     /* background-image: url("img/02.jpg"); */
     /* background-position: center;
     background-repeat: no-repeat;
@@ -225,6 +227,12 @@ body {
         #maxTemp {
             font-size: 13px;
         }
+
+    }
+
+    #temperature img {
+        width: 100px;
+        height: 100px;
     }
 
     .sunSetRise {
@@ -504,7 +512,7 @@ body {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     /* border:1px solid #0079DF; */
-    overflow: hidden;
+    overflow-y: scroll;
     backdrop-filter: blur(50px);
     /* box-shadow: 20px 0px 5px 0px #000; */
 
@@ -527,104 +535,52 @@ body {
 
 
     .main-body {
-        padding: 25px;
+        padding: 25px 10px;
 
         .body-info {
             width: 100%;
             position: relative;
 
-            .main-temp {
-                display: flex;
-                /* border: 1px solid white; */
-                font-size: 40px;
-                position: relative;
-                /* box-shadow: inset 0px 0px 15px rgba(0,0,0,0.4); */
-                color: white !important;
-                margin-bottom: 10px;
-
-
-
-                .left {
-                    padding: 10px;
-                    /* border-right: 1px solid #ffffffa1; */
-                    /* box-shadow: 0px 0px 5px 0px #19875490; */
-                    width: 150px;
-                    /* background-color: #19875490; */
-                    background-color: var(--secondary);
-                    border-radius: 8px;
-
-                    .minmax {
-                        width: 100%;
-                        border-top: 1px solid #ffffffa7;
-                        padding: 4px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        font-size: 10px;
-
-                        .fa-caret-up {
-                            color: rgb(238, 69, 69);
-                        }
-
-                        .fa-caret-down {
-                            color: green;
-                        }
-                    }
-                }
-
-
-                .right {
-                    padding: 4px 8px;
-                    flex: 1;
-
-
-
-                    .title {
-                        font-size: 14px;
-                    }
-                }
-            }
-
             .nextHourWeather {
                 /* height: 0px; */
                 padding: 4px;
-                display: flex;
-                justify-content: start;
-                align-items: center;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+                grid-gap: 1rem;
                 /* background-color: #072130; */
 
 
                 .weatherItem {
-                    width: 70px;
-                    height: 100px;
+                    /* width: 70px;*/
+                    height: 130px;
                     /* backdrop-filter: blur(25px); */
                     /* border: 1px solid var(--secondary); */
-                    background-color: var(--secondary);
+                    /* background-color: var(--secondary); */
                     color: #fff;
-                    margin-right: 8px;
-                    border-radius: 2px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
                     padding: 7px;
+                    border-radius: 12px;
+                    box-shadow: -5px -5px 12px 0px #00000020, 5px 5px 12px 0px #ffffff20;
 
                     .time {
-                        font-size: 12px;
+                        font-size: 14px;
                         width: 50px;
                         /* padding-top: 3px; */
                     }
 
                     .temp {
-                        font-size: 11px;
+                        font-size: 14px;
 
                         .sup {
-                            font-size: 11px;
+                            font-size: 12px;
                         }
                     }
 
                     .iconImg {
-                        width: 35px;
+                        width: 50px;
                     }
 
                 }
@@ -638,79 +594,14 @@ body {
 
         }
 
-        .other-temp {
-            /* border: 1px solid white; */
-            width: auto;
-            height: auto;
-            margin-top: 15px;
-
-            .middle {
-                padding: 1px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                /* border-right: 1px solid #ffffffa1; */
-
-                .windSpeed {
-                    padding: 8px 4px;
-                    text-align: center;
-                    background-color: #f5f1f121;
-
-                    /* border-bottom: 1px solid #ffffffa1;; */
-                    .windMitter {
-                        font-size: 12px;
-                    }
-
-                    .fas {
-                        font-size: 14px;
-                    }
-
-                    .h6 {
-                        font-size: 15px;
-                        padding: 0px 3px;
-                        ;
-                    }
-
-                    .p {
-                        font-size: 12px;
-                    }
-
-                    .fa-caret-up {
-                        color: rgb(238, 69, 69);
-                    }
-
-                    .fa-caret-down {
-                        color: green;
-                    }
-
-                }
-
-                .seaLevel {
-                    text-align: left;
-                    padding: 4px;
-
-                    .h6 {
-                        font-size: 15px;
-                        padding: 0px 3px;
-                        ;
-                    }
-
-                    .p {
-                        font-size: 12px;
-                    }
-                }
-            }
-
-        }
-
     }
 
 
     .footer {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        grid-gap: 1fr;
         /* background: #19875490; */
         /* background-color: #CF483A; */
         /* backdrop-filter: blur(50px); */
@@ -719,46 +610,52 @@ body {
         .footer-item {
             /* width: calc() */
             /* width 20% with both side 5px margin use calse function  */
-            width: calc((100% - (5px * 2)) / 4);
+            /* width: calc((100% - (5px * 2)) / 4); */
             /* height: auto; */
-            height: 100px;
+            height: 130px;
             padding: 4px;
-            /* background-color: hsl(225, %, 28%); */
             margin: 0px 2px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             color: #fff;
-            /* border: 1px solid var(--grey); */
-            /* box-shadow: 0px 0px 2px 0px #fff; */
-            backdrop-filter: blur(50px);
+            /* border: 1px; */
+            box-shadow: -5px -5px 12px 0px #ffffff20, 5px 5px 12px 0px #00000020;
+            border-radius: 12px;
             position: relative;
 
             /* background-color: #CF483A; */
             &:first-child {
-                background-color: #198754;
-                border-color: #198754;
+                background-color: var(--light-primary);
             }
 
             .footer-title {
                 color: var(--white);
                 font-weight: bolder;
-                font-size: 18px;
+                font-size: 14px;
             }
 
             .footer-temp {
-                font-size: 12px;
+                font-size: 13px;
             }
 
             .footer-title {
                 font-size: 12px;
+            }
+
+            .iconImg {
+                width: 50px;
+
             }
         }
     }
 
 }
 
+#main_app::-webkit-scrollbar {
+    width: 2px;
+}
 
 @keyframes boxShadow {
     0% {

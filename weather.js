@@ -1615,7 +1615,7 @@ async function getWeather(city) {
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city??"Dhaka"}&APPID=2acfc6c74c2396283f1bf3b656fc902f`)
         .then((response) => response.data)
         .then((weather) => {
-
+            console.log(weather.weather[0].main);
             // console.log(weather);
             setLocationBtn.innerHTML = weather.name;
             // searchInputElement.value = weather.name;
@@ -1798,9 +1798,9 @@ async function getWeatherNextFiveHours(city) {
     axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city??"dhaka"}&appid=2acfc6c74c2396283f1bf3b656fc902f`)
         .then((response) => response.data)
         .then((weather) => {
-            // console.log(weather);
             let nextDayWeather = '';
             weather.list.forEach((fw) => {
+                console.log(fw.weather[0].main);
                 let currentDate = new Date(); //today
                 let dtt = fw.dt * 1000; //convert UTC to millicound
                 let fwDate = new Date(dtt); //current date corespondint millicound
@@ -1819,6 +1819,7 @@ async function getWeatherNextFiveHours(city) {
 
                 if (fwDate.getDate() == currentDate.getDate() || fwDate.getDate() == currentDate.getDate() + 1) {
                     // console.log(fw);
+                    // let todayImg = '';
                     nextDayWeather +=
                         `
                     <div class="weatherItem">
@@ -1830,7 +1831,25 @@ async function getWeatherNextFiveHours(city) {
                     </div> 
                 
                 `;
-                    document.getElementById('mainImg').innerHTML = `<img  src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png">`;
+                    switch (fw.weather[0].main) {
+                        case 'Clear':
+                            document.getElementById('mainImg').innerHTML = `<img src="img/clear_sky.png">`;
+                            // todayImg = img/clear_sky.png;
+                            break;
+                        case 'Clouds':
+                            document.getElementById('mainImg').innerHTML = `<img src="img/broken_cloud_sky.png">`;
+                            // todayImg = img/broken_cloud_sky.png;
+                            break;
+                        case "Rain":
+                            document.getElementById('mainImg').innerHTML = `<img src="img/rain_sky.png">`;
+                            break;
+
+                        default:
+                            document.getElementById('mainImg').innerHTML = `<img src="img/cloud_sky.png">`;
+                            break;
+                            // break;
+                    }
+                    // document.getElementById('mainImg').innerHTML = `<img  src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png">`;
 
                     //min max weather
                     let tempMinCelcious = fw.main.temp_min - 275.14;
@@ -1991,6 +2010,8 @@ async function makeNestWatherArray() {
 //     console.log(nextFourDay);
 
 
-
+forceCat.list.forEach(wl => {
+    console.log("from archive data :" + wl.weather[0].main);
+})
 
 // });

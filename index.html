@@ -17,6 +17,8 @@
     <!-- asside left  -->
     <section id="asside_left">
 
+
+
         <!-- location set and get section  -->
         <div class="location">
             <button class="setLocation " id="setLocation">DEFAULT !</button>
@@ -29,6 +31,18 @@
             </div>
 
         </div>
+        <!-- <div class="asside_tab_content" id="weather">
+            Heather
+        </div> -->
+        <div class="w-100">
+            <div class="dateAndTime px-5 py-2 m-0">
+                <!-- <span class='currentDay' id="toDay">Monday</span> -->
+                <span class="currentTime" id="currentTime"></span>
+                <div id="toDay"></div>
+            </div>
+            <div class="hr hr_gray"></div>
+        </div>
+
         <div id="user_location">
             <div class="user_location_wrapper">
 
@@ -106,11 +120,14 @@
         <!-- aside left home  -->
         <div class="w-100">
             <div id="temperature" class="px-5 py-2 m-0">
-                <div id="mainImg"> </div>
+                <div id="mainImg">
+                    <img src="img/clear_sky.png" alt="">
+                </div>
                 50.50<sup>°C</sup>
+
                 <div>
                     <div id="weatherTitle">
-                        cloud Sky
+                        CLEAR Sky
                     </div>
                     <div>
                         <span id="minTemp"></span>0.00<sup>°C</sup>
@@ -136,20 +153,10 @@
             </div>
         </div>
 
-        <!-- <div class="asside_tab_content" id="weather">
-            Heather
-        </div> -->
-        <div class="w-100">
-            <div class="hr hr_gray"></div>
-            <div class="dateAndTime px-5 py-2 m-0">
-                <!-- <span class='currentDay' id="toDay">Monday</span> -->
-                <span class="currentTime" id="currentTime"></span>
-                <div id="toDay"></div>
-            </div>
-        </div>
+
     </section>
 
-    
+
     <section id="main_app">
 
         <!-- settings section  -->
@@ -188,7 +195,7 @@
 
                 </div>
 
-                <div class="nextHourWeather owl-carousel" id="nextHourWeather">
+                <div class="nextHourWeather" id="nextHourWeather">
                     <div class="weatherItem">
                         <div class="temp">0.0<sup class="sup">°C</sup></div>
                         <div>
@@ -271,7 +278,7 @@
                 <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
 
                 <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/n.png">
+                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
                 </div>
 
                 <div class="footer-title">
@@ -284,7 +291,7 @@
                 <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
 
                 <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/n.png">
+                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
                 </div>
 
                 <div class="footer-title">
@@ -297,7 +304,7 @@
                 <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
 
                 <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/n.png">
+                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
                 </div>
 
                 <div class="footer-title">
@@ -310,7 +317,7 @@
                 <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
 
                 <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/n.png">
+                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
                 </div>
 
                 <div class="footer-title">
@@ -323,7 +330,7 @@
                 <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
 
                 <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/n.png">
+                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
                 </div>
 
                 <div class="footer-title">
@@ -407,7 +414,7 @@
     <script src="function.js"></script>
     <!-- <script src="state.js"></script> -->
     <!-- <script src="test.js"></script> -->
-    <script>
+    <!-- <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
@@ -430,7 +437,7 @@
             animateIn: 'fadeIn'
 
         });
-    </script>
+    </script> -->
 
 </body>
 
