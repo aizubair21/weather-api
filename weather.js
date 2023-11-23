@@ -1622,8 +1622,7 @@ async function getWeather(city) {
             let temperatureCelcious = weather.main.temp - 275.14;
             let localStorageObject = {
                 keyword: weather.name,
-                search_date: todate.toDateString(),
-                search_time: todate.toLocaleTimeString(),
+                dateTime: todate,
                 temp: temperatureCelcious,
                 weather: weather.weather,
                 active: false,
@@ -1635,10 +1634,10 @@ async function getWeather(city) {
             temperatureElement.innerHTML =
                 `
             <div id="mainImg"></div>
-            ${temperatureCelcious.toFixed(1)}<sup style="font-size:12px;">°C</sup>
+            ${temperatureCelcious.toFixed(1)}<sup >°C</sup>
             <div>
                 <div id="weatherTitle"></div>
-                <div> <span id="minTemp"></span> - <span id="maxTemp"></span><sup style="font-size:11px" >°C</sup> </div>
+                <div> <span id="minTemp"></span> - <span id="maxTemp"></span><sup >°C</sup> </div>
             </div>
         
         `;

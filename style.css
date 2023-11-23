@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 18px;
-    font-family: sans-serif;
-    border-radius: 3px;
+    /* font-family: cursive; */
+    box-sizing: border-box;
+    /* border-radius: 3px; */
     /* color: #fffacc; */
 }
 
 :root {
-    --mid-primary: #19875440;
+    --dark-secondary: #19875440;
     /* --light-primary: #19875420; */
     --secondary: #198754;
     --light-secondary: #19875420;
@@ -17,43 +18,298 @@
     --compliment: #0079DF;
     --white: #fff;
     --black: #000;
-    --grey: #ccc;
-    --primary: #CF483A;
-    --light-primary: #CF483A20;
-
+    --gray: #ccc;
+    --primary: #008f7b;
+    --light-primary: #00c4aa;
+    --dark-primary: #006356;
+    --hr: #ffffff80;
 }
 
-.iconImg {
-    width: 100%;
-}
 
 body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     align-items: center;
     height: 100vh;
-    width: 95%;
-    background-color: #071521;
-    /* background: linear-gradient(293deg, #0079DF, #CF483A); */
+    width: 100%;
+    padding: 25px;
+    /* background-color: var(--light-primary); */
+    /* background: linear-gradient(133deg, #0079DF, #CF483A); */
+    background: linear-gradient(180deg, var(--dark-primary), var(--light-primary));
     /* background-image: url("img/02.jpg"); */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
+    background-size: cover; */
+    box-sizing: border-box;
+    overflow: hidden;
     /* background-blend-mode: luminosity; */
     /* backdrop-filter: blur(3px); */
 }
 
 #asside_left {
-    background-color: #19875420;
-    color: white;
-    width: 350px;
-    height: 560px;
-    border-radius: 12px;
-    margin: 8px;
-    padding: 15px;
+    background-color: var(--white);
+    color: #000;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    /* border-radius: ; */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    /* padding: 15px; */
+    /* box-shadow: 0px 0px 10px 0px #fff; */
+    border-right: 3px solid #00000080;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
+    #user_location {
+        position: fixed;
+        top: -500%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* max-width: 350px; */
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background-color: #00000020;
+        /* width: 100%; */
+        z-index: 5;
+        transition: all linear.3s;
+        ;
+
+        /* height: 500px; */
+        .user_location_wrapper {
+            max-width: 450px;
+            width: 100%;
+            background-color: #fff;
+            /* height: auto; */
+            padding: 15px
+        }
+
+        .user_loc_header {
+
+            padding: 8px;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .user_loc_body {
+            padding: 8px;
+
+            .loc_item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                /* border: 1px solid #000; */
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .user_location_active {
+        /* position: fixed; */
+        top: 50% !important;
+        /* left: 50%; */
+        transform: translate(-50%, -50%) !important;
+        transition: all linear .3s;
+    }
+
+    .location {
+        color: #ffffff80 !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-self: flex-start;
+        width: 100%;
+        padding: 8px;
+        background-color: #00000080;
+
+        /* color: white; */
+        .img {
+            margin-right: 5px;
+            background-color: #00000080;
+        }
+
+        #locationInput {
+            padding: 8px;
+            font-size: 13px !important;
+        }
+
+        .setLocation,
+        .open {
+            padding: 8px 15px;
+            margin: 2px;
+            color: #000;
+            border: none;
+            font-size: 16px;
+            position: relative;
+            cursor: pointer;
+            width: 150px;
+            border-radius: 8px;
+            text-align: left;
+            /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); */
+            background-color: #fff;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: calc(50% - 4px);
+                right: 15px;
+                width: 8px;
+                height: 8px;
+                transform: translateY(-50%) rotate(45deg);
+                border-style: solid;
+                border-width: 2px;
+                border-color: transparent #000 #000 transparent;
+                transition: all linear .3s;
+            }
+        }
+
+        .open::after {
+            content: "";
+            position: absolute;
+            top: calc(50% - 0px);
+            right: 15px;
+            width: 8px;
+            height: 8px;
+            transform: translateY(-50%) rotate(45deg);
+            border-style: solid;
+            border-width: 2px;
+            border-color: #000 transparent transparent #000;
+            transition: all linear .3s;
+        }
+
+        .setting_icon {
+            /* border: 1px solid #fff; */
+            margin-left: 20px;
+            border-radius: 3px;
+            transition: all linear .3s;
+            /* background-color: #00000020; */
+            cursor: pointer;
+            transition: all linear .3s;
+
+            #icon {
+                width: 45px;
+                padding: 8px;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: rotate(25deg);
+                    transition: all linear .3s;
+
+                }
+            }
+        }
+    }
+
+    #temperature {
+        font-size: 35px;
+        text-align: center;
+        font-weight: 600;
+        color: var(--dark-primary);
+        font-family: cursive;
+
+        #weatherTitle {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        #minTemp,
+        #maxTemp {
+            font-size: 13px;
+        }
+    }
+
+    .sunSetRise {
+        position: relative;
+        padding: 20px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        #sun {
+            position: absolute;
+            top: 27px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f98f07;
+            height: 182px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #sun svg {
+            box-shadow: 0px 0px 25px 0px #f98f07;
+            border-radius: 50%;
+            padding: 4px;
+            font-size: 25px;
+            border: 1px solid #FFF;
+        }
+
+        .sunRise,
+        .sunSet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            border-radius: 50%;
+            height: 200px;
+            border-color: #00000080;
+            border-style: dashed;
+            border-width: 2px 0px 0px 0px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 30px;
+            background-color: #00000020;
+            border-radius: 50%;
+        }
+    }
+
+
+
+    .dateAndTime {
+        font-size: 22px;
+        line-height: 20px;
+        color: #00000080;
+        text-align: center;
+        margin: 8px 0px;
+
+        .currentTime {
+            font-size: 22px;
+            line-height: 25px;
+            font-weight: 600;
+            font-family: sans-serif;
+            margin-bottom: 3px;
+        }
+
+        #toDay {
+            font-size: 20px;
+        }
+    }
 }
 
 #asside_right {
@@ -61,15 +317,16 @@ body {
     color: white;
     width: 350px;
     height: 560px;
-    border-radius: 12px;
-    margin: 8px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     padding: 15px;
+    display: none;
 
     .right_tab {
         width: 230px;
         height: 40px;
         margin: 8px auto;
-        border: 2px solid #19875420;
+        border: .7px solid #0079DF;
         border-radius: 25px;
         display: flex;
         justify-content: space-between;
@@ -80,7 +337,7 @@ body {
 
         .right_tab_active {
             position: absolute;
-            top: 0px;
+            top: 1px;
             width: 115px;
             height: 36px;
             background-color: #0079DF;
@@ -90,12 +347,12 @@ body {
         }
 
         .active_on_left {
-            left: 0 !important;
+            left: 2px !important;
             transition: all linear .3s;
         }
 
         .active_on_right {
-            right: 0 !important;
+            right: 2px !important;
             transition: all linear .3s;
         }
 
@@ -103,6 +360,8 @@ body {
 
 
     .recent_searches {
+        /* display: flex!important;
+        flex-direction: column-reverse; */
 
         /*------ Settings ------*/
         .deligate_container {
@@ -163,6 +422,7 @@ body {
             background-color: #224f75 !important;
         }
 
+
         .search {
             backdrop-filter: blur(25px);
             display: flex;
@@ -198,6 +458,7 @@ body {
                 }
             }
         }
+
     }
 
     .activities {
@@ -210,11 +471,8 @@ body {
             margin-bottom: 3px;
             padding: 5px 8px;
 
-            .activity_date,
-            .activity_in_time,
-            .activity_out_time,
-            .activity_ttime {
-                font-size: 13px;
+            &>* {
+                font-size: 14px;
             }
 
             .activity_del {
@@ -237,159 +495,39 @@ body {
     text-align: center;
     /* background: linear-gradient(-45deg, #173d47, #173d4b ); */
     /* background-color: #173d4ba1; */
-    background-color: var(--light-primary);
+    background-color: var(--primary);
     /* background-image: url('img/01.jpg'); */
     /* padding: 8px 0px; */
-    width: 500px;
-    height: 560px;
-    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    /* padding: 25px; */
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     /* border:1px solid #0079DF; */
     overflow: hidden;
     backdrop-filter: blur(50px);
     /* box-shadow: 20px 0px 5px 0px #000; */
 
-    #user_location {
-        padding: 8px;
-        background-color: #fff;
-        position: fixed;
-        bottom: 0px;
-        left: 0;
-        transition: all linear .3s;
-        width: 100%;
-        z-index: 5;
-        opacity: 0;
-        display: none;
-        /* height: 500px; */
 
-        .user_loc_header {
-
-            padding: 8px;
-            font-size: 25px;
-            font-weight: 600;
-        }
-
-        .user_loc_body {
-            padding: 8px;
-
-            .loc_item {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 5px;
-                /* border: 1px solid #000; */
-                border-radius: 3px;
-            }
-        }
-    }
-
-    .user_location_active {
-        bottom: 0px !important;
-        transition: all linear .3s;
-        opacity: 1 !important;
-        display: block !important;
-    }
 
     .header {
         width: 100%;
         /* backdrop-filter: blur(25px); */
         /* background-color: #0e2d3aa1; */
-        background-color: var(--compliment);
+        /* background-color: var(--complimen); */
+        /* border-bottom: 1px solid var(--hr); */
         margin: 0 auto;
-        padding: 15px 15px;
+        padding: 15px 25px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-radius: 0px;
 
-        .dateAndTime {
-            font-size: 14px;
-            line-height: 20px;
-            color: white;
-        }
-
-        .location {
-            color: #000 !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            /* color: white; */
-            .img {
-                margin-right: 5px;
-                width: 25px;
-                padding: 4px;
-            }
-
-            #locationInput {
-                padding: 8px;
-                font-size: 13px !important;
-            }
-
-            .setLocation,
-            .open {
-                padding: 8px 15px;
-                margin: 2px;
-                color: #fff;
-                border: none;
-                font-size: 16px;
-                position: relative;
-                cursor: pointer;
-                width: 150px;
-                border-radius: 8px;
-                text-align: left;
-                box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
-                background-color: inherit;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: calc(50% - 4px);
-                    right: 15px;
-                    width: 8px;
-                    height: 8px;
-                    transform: translateY(-50%) rotate(45deg);
-                    border-style: solid;
-                    border-width: 2px;
-                    border-color: transparent white white transparent;
-                    transition: all linear .3s;
-                }
-            }
-
-            .open::after {
-                content: "";
-                position: absolute;
-                top: calc(50% - 0px);
-                right: 15px;
-                width: 8px;
-                height: 8px;
-                transform: translateY(-50%) rotate(45deg);
-                border-style: solid;
-                border-width: 2px;
-                border-color: white transparent transparent white;
-                transition: all linear .3s;
-            }
-
-            #settings_icon {
-                width: 45px;
-                padding: 8px;
-                /* border: 1px solid #fff; */
-                margin-left: 20px;
-                border-radius: 3px;
-                transition: all linear .3s;
-
-                &:hover {
-                    cursor: pointer;
-                    transform: rotate(25deg);
-                    transition: all linear .3s;
-
-                }
-            }
-        }
     }
 
 
     .main-body {
-        padding: 8px;
+        padding: 25px;
 
         .body-info {
             width: 100%;
@@ -404,19 +542,7 @@ body {
                 color: white !important;
                 margin-bottom: 10px;
 
-                #temperature {
-                    font-size: 30px;
 
-                    #weatherTitle {
-                        margin-top: 8px;
-                        font-size: 13px;
-                    }
-
-                    #minTemp,
-                    #maxTemp {
-                        font-size: 12px;
-                    }
-                }
 
                 .left {
                     padding: 10px;
@@ -451,39 +577,7 @@ body {
                     padding: 4px 8px;
                     flex: 1;
 
-                    .sunSetRise {
-                        position: relative;
-                        padding: 2px;
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
 
-                        #sun {
-                            position: absolute;
-                            top: -10px;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            width: 200px;
-                            height: 200px;
-                            color: #f98f07;
-                        }
-                    }
-
-                    .sunSetRise::after {
-                        content: "";
-                        position: absolute;
-                        top: 0px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 200px;
-                        border-radius: 50%;
-                        height: 200px;
-                        border-color: #fff;
-                        border-style: dashed;
-                        border-width: 2px 0px 0px 0px;
-                    }
 
                     .title {
                         font-size: 14px;
