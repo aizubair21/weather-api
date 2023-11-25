@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
     <link rel="stylesheet" href="asset/css/fs.all.min.css">
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="responsive.css">
 
 </head>
 
@@ -19,18 +20,20 @@
 
 
 
-        <!-- location set and get section  -->
+        <!-- button  -->
         <div class="location">
             <button class="setLocation " id="setLocation">DEFAULT !</button>
             <!-- <img class="img" src="img/location.png" alt=""> -->
             <!-- <form action="" id="searchForm">
                 <input type="text" name="location" autofocus id="searchInput">
             </form> -->
-            <div class="setting_icon">
+            <div class="setting_icon" data-bs-toggle="modal" data-bs-target="#sittingsModal">
                 <img id="icon" src="img/settings.png" alt="" srcset="">
             </div>
 
         </div>
+
+
         <!-- <div class="asside_tab_content" id="weather">
             Heather
         </div> -->
@@ -43,81 +46,7 @@
             <div class="hr hr_gray"></div>
         </div>
 
-        <div id="user_location">
-            <div class="user_location_wrapper">
-
-                <div class="user_loc_header">
-                    Your Location:
-                </div>
-                <hr>
-
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="search-tab" data-bs-toggle="tab"
-                            data-bs-target="#search-tab-pane" type="button" role="tab" aria-controls="search-tab-pane"
-                            aria-selected="true">Search</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Select</button>
-                    </li>
-
-
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                        tabindex="0">
-                        <div class="user_loc_body">
-                            <div class="">
-                                <div class="input-group">
-                                    <label class="input-group-text"> Country :</label>
-                                    <select name="" id="select_country" class="form-control form-select">
-
-                                    </select>
-                                </div>
-                                <div class="input-group my-3">
-                                    <label class="input-group-text"> State/Divition :</label>
-                                    <select name="" id="select_state" class="form-control form-select"></select>
-                                </div>
-                                <div class="input-group">
-                                    <label class="input-group-text"> City :</label>
-                                    <select name="" id="select_city" class="form-control form-select"></select>
-                                </div>
-                            </div>
-                            <div class="w-100 float-end d-flex align-items-center">
-                                <button
-                                    class="btn btn-outline-warning btn-md  mt-3 me-3 user_location_close">Close</button>
-                                <!-- <button class="btn btn-success btn-md  mt-3" id="locationCheckBtn">Check </button> -->
-                                <button class="btn btn-outline-success btn-md float-end mt-3" id="locationSubBtn">Submit
-
-                            </div>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="search-tab-pane" role="tabpanel"
-                        aria-labelledby="search-tab" tabindex="1">
-                        <div class="py-3">
-                            <div class="input-group">
-                                <div class="input-group-text">City :</div>
-                                <input type="search" name="" id="locationCheckInput" class="form-control form-search"
-                                    placeholder="Type city name .." autofocus="true" autocomplete="true"
-                                    spellcheck="true" aria-checked="true">
-
-                            </div>
-                            <div class="w-100 float-end d-flex align-items-center">
-                                <button
-                                    class="btn btn-outline-warning btn-md  mt-3 me-3 user_location_close">Close</button>
-                                <button class="btn btn-success btn-md  mt-3" id="locationCheckBtn">Check </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- aside left home  -->
+        <!-- aside left main weather  -->
         <div class="w-100">
             <div id="temperature" class="px-5 py-2 m-0">
                 <div id="mainImg">
@@ -159,11 +88,9 @@
 
     <section id="main_app">
 
-        <!-- settings section  -->
-
-        <!-- top header  -->
+        <!-- main app tab nav  -->
         <div class="header">
-            <div class="title asside_tab">
+            <div class=" asside_tab">
                 <button class="tab_button tab_button_active">
                     <i class="fas fa-home "></i>
                     Home
@@ -173,28 +100,14 @@
                     Weathers
                     <!-- setting icon fonrawesome  -->
                 </button>
-
             </div>
-
-
-
         </div>
 
 
-
+        <!-- main app tab content  -->
         <!-- main body  -->
         <div class="main-body">
             <div class="body-info">
-
-                <div class="main-temp">
-
-                    <div class="right">
-
-
-                    </div>
-
-                </div>
-
                 <div class="nextHourWeather" id="nextHourWeather">
                     <div class="weatherItem">
                         <div class="temp">0.0<sup class="sup">°C</sup></div>
@@ -253,93 +166,156 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="hr hr_white my-2"></div>
+                <div class="more_weather_info" id="moreWeatherInfo">
+                    <div class="weatherItem">
+                        <div class="icon">
+                            <img src="img/temperature.png" alt="">
+                        </div>
+                        <div class="temp">
+                            27 <sup>c</sup>
+                        </div>
+                        <div class="title">
+                            Feels Like
+                        </div>
 
-            <div class="other-temp d-none">
-                <div class="middle">
-                    <div class="skyCondition" id="skyCondition">
+                    </div>
+                    <div class="weatherItem">
+                        <div class="icon">
+                            <img src="img/humidity.png" alt="">
+                        </div>
+                        <div class="temp">
+                            68 %
+                        </div>
+                        <div class="title">
+                            Humidity
+                        </div>
+
+                    </div>
+                    <div class="weatherItem">
+                        <div class="icon">
+                            <img src="img/wind.png" alt="">
+                        </div>
+                        <div class="temp">
+                            1016 hPa
+                        </div>
+                        <div class="title">
+                            Air Pressure
+                        </div>
+
+                    </div>
+                    <div class="weatherItem">
+                        <div class="icon">
+                            <img src="img/eye.png" alt="">
+                        </div>
+                        <div class="temp">
+                            5 Km
+                        </div>
+                        <div class="title">
+                            Visibility
+                        </div>
 
                     </div>
 
-                    <div class="windSpeed" id="windMitter">
+                    <div class="weatherItem">
+                        <div class="icon">
+                            <img src="img/sea.png" alt="">
+                        </div>
+                        <div class="temp">
+                            1016 pHa
+                        </div>
+                        <div class="title">
+                            Sea Label
+                        </div>
+
+                    </div>
+                    <div class="weatherItem">
+                        <div class="icon">
+                            <img src="img/speed.png">
+                        </div>
+                        <div class="temp">
+                            20 Mils/H
+                        </div>
+                        <div class="title">
+                            Air Speed
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer  -->
+            <div>
+                <div class="hr hr_white my-2"></div>
+                <div class="footer" id="footer">
+                    <div class="footer-item">
+
+                        <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
+
+                        <div class="footer-img">
+                            <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
+                        </div>
+
+                        <div class="footer-title">
+                            DAY
+                        </div>
+
+                    </div>
+                    <div class="footer-item">
+
+                        <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
+
+                        <div class="footer-img">
+                            <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
+                        </div>
+
+                        <div class="footer-title">
+                            DAY
+                        </div>
+
+                    </div>
+                    <div class="footer-item">
+
+                        <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
+
+                        <div class="footer-img">
+                            <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
+                        </div>
+
+                        <div class="footer-title">
+                            DAY
+                        </div>
+
+                    </div>
+                    <div class="footer-item">
+
+                        <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
+
+                        <div class="footer-img">
+                            <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
+                        </div>
+
+                        <div class="footer-title">
+                            DAY
+                        </div>
+
+                    </div>
+                    <div class="footer-item">
+
+                        <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
+
+                        <div class="footer-img">
+                            <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
+                        </div>
+
+                        <div class="footer-title">
+                            DAY
+                        </div>
 
                     </div>
 
-
                 </div>
             </div>
-
-        </div>
-
-        <!-- footer  -->
-        <div class="footer" id="footer">
-            <div class="footer-item">
-
-                <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
-
-                <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
-                </div>
-
-                <div class="footer-title">
-                    DAY
-                </div>
-
-            </div>
-            <div class="footer-item">
-
-                <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
-
-                <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
-                </div>
-
-                <div class="footer-title">
-                    DAY
-                </div>
-
-            </div>
-            <div class="footer-item">
-
-                <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
-
-                <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
-                </div>
-
-                <div class="footer-title">
-                    DAY
-                </div>
-
-            </div>
-            <div class="footer-item">
-
-                <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
-
-                <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
-                </div>
-
-                <div class="footer-title">
-                    DAY
-                </div>
-
-            </div>
-            <div class="footer-item">
-
-                <div class="footer-temp">00.00 <sup style="font-size:12px">c</sup> </div>
-
-                <div class="footer-img">
-                    <img class="iconImg" src="https://openweathermap.org/img/w/10n.png">
-                </div>
-
-                <div class="footer-title">
-                    DAY
-                </div>
-
-            </div>
-
-        </div>
     </section>
 
 
@@ -355,10 +331,10 @@
             </div>
         </div>
 
-        <div class="right_tab_content recent_searches" id="recentSearch">
+        <!-- <div class="right_tab_content recent_searches" id="recentSearch">
 
 
-        </div>
+        </div> -->
 
         <div class="right_tab_content activities">
 
@@ -397,6 +373,103 @@
 
     </section>
 
+
+    <!-- settings modal  -->
+    <!-- bootstrap simple modal here  -->
+    <div class="modal fade " id="sittingsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Related Settings</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- popup modal  -->
+    <div id="user_location">
+        <div class="user_location_wrapper">
+
+            <div class="user_loc_header">
+                Your Location:
+            </div>
+            <hr>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="search-tab" data-bs-toggle="tab"
+                        data-bs-target="#search-tab-pane" type="button" role="tab" aria-controls="search-tab-pane"
+                        aria-selected="true">Search</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Select</button>
+                </li>
+
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div class="user_loc_body">
+                        <div class="">
+                            <div class="input-group">
+                                <label class="input-group-text"> Country :</label>
+                                <select name="" id="select_country" class="form-control form-select">
+
+                                </select>
+                            </div>
+                            <div class="input-group my-3">
+                                <label class="input-group-text"> State/Divition :</label>
+                                <select name="" id="select_state" class="form-control form-select"></select>
+                            </div>
+                            <div class="input-group">
+                                <label class="input-group-text"> City :</label>
+                                <select name="" id="select_city" class="form-control form-select"></select>
+                            </div>
+                        </div>
+
+                        <div class="my-2">
+                            <button class="btn btn-outline-warning btn-md  mt-3 me-3 user_location_close">Close</button>
+                            <!-- <button class="btn btn-success btn-md  mt-3" id="locationCheckBtn">Check </button> -->
+                            <button class="btn btn-outline-success btn-md  mt-3" id="locationSubBtn">Submit
+
+                        </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="search-tab-pane" role="tabpanel" aria-labelledby="search-tab"
+                    tabindex="1">
+                    <div class="py-3">
+                        <div class="input-group">
+                            <div class="input-group-text">City :</div>
+                            <input type="search" name="" id="locationCheckInput" class="form-control form-search"
+                                placeholder="Type city name .." autofocus="true" autocomplete="true" spellcheck="true"
+                                aria-checked="true">
+
+                        </div>
+                        <div class="">
+                            <button class="btn btn-outline-warning btn-md  mt-3 me-3 user_location_close">Close</button>
+                            <button class="btn btn-success btn-md  mt-3" id="locationCheckBtn">Check </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- recent searches -->
+            <h6>Recent Searches</h6>
+            <div class="hr hr_gray"></div>
+            <div class=" recent_searches" id="recentSearch"> </div>
+        </div>
+    </div>
 
 
     <!-- <script src="geoCountry.js"></script> -->

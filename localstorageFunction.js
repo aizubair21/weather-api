@@ -105,8 +105,9 @@ function triggerActiveSearchData(tindex, isFirsrInsert = false) {
         if (!isFirsrInsert) {
             getWeatherIfLocalStorageDataFound();
         }
+        openAndCloseLocationForm();
     }
-    console.log(ld);
+    // console.log(ld);
 }
 
 /**

@@ -199,8 +199,9 @@ locationSubBtn.addEventListener('click', () => {
     let city = document.getElementById("select_city").value;
     if (city) {
         getWeather(city);
-        console.log(city);
-        locationForm.classList.remove('user_location_active')
+        // console.log(city);
+        // openAndCloseLocationForm();
+        locationForm.classList.remove('user_location_active');
     }
 })
 
@@ -222,6 +223,8 @@ setLocationBtn.addEventListener("click", () => {
         getCountryStateCity();
     }
 })
+
+
 userLW.forEach(ulw => {
     ulw.addEventListener("click", openAndCloseLocationForm);
 })

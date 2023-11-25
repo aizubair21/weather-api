@@ -13,6 +13,11 @@ const setLocationBtn = document.getElementById('setLocation');
 const locationSubBtn = document.getElementById("locationSubBtn");
 const locationForm = document.getElementById('user_location');
 const locationCheckBtn = document.getElementById('locationCheckBtn')
+const spinner = `<div class="d-flex justify-content-center">
+<div class="spinner-border" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>`;
 // const setLocationBtn = document.getElementById('setLocation')
 
 
@@ -1612,7 +1617,13 @@ const forceCat = {
 
 // });
 async function getWeather(city) {
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city??"Dhaka"}&APPID=2acfc6c74c2396283f1bf3b656fc902f`)
+
+    document.getElementById('weatherTitle').innerHTML = spinner;
+    document.getElementById("moreWeatherInfo").innerHTML = spinner;
+    nextHourWeatherElement.innerHTML = spinner;
+    footerElement.innerHTML = spinner;
+
+    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city??"Dhaka"}&APPID=2acfc6c74c2396283f1bf3b656fc902f`)
         .then((response) => response.data)
         .then((weather) => {
             console.log(weather.weather[0].main);
@@ -1633,14 +1644,14 @@ async function getWeather(city) {
             // }, 1000);
             temperatureElement.innerHTML =
                 `
-            <div id="mainImg"></div>
-            ${temperatureCelcious.toFixed(1)}<sup >°C</sup>
-            <div>
-                <div id="weatherTitle"></div>
-                <div> <span id="minTemp"></span> - <span id="maxTemp"></span><sup >°C</sup> </div>
-            </div>
-        
-        `;
+                <div id="mainImg"></div>
+                ${temperatureCelcious.toFixed(1)}<sup >°C</sup>
+                <div>
+                    <div id="weatherTitle"></div>
+                    <div> <span id="minTemp"></span> - <span id="maxTemp"></span><sup >°C</sup> </div>
+                </div>
+            
+            `;
             // let tempMinCelcious = weather.main.temp_min - 275.14;
             let tempMaxCelcious = weather.main.temp_max - 275.14;
             document.getElementById('maxTemp').innerHTML = tempMaxCelcious.toFixed(1);
@@ -1656,35 +1667,138 @@ async function getWeather(city) {
 
             // </div>
             // `;
-            let windSpeedMiles = weather.wind.speed * 3.6;
-            windMitterElement.innerHTML =
-                `
-        <span class="windMitter"> ${windSpeedMiles.toFixed(3)} Kh/H </span>
-        <div class="h6">
-            <img width="25"  src="img/wind.png">
-        </div>
-        `;
+            // let windSpeedMiles = weather.wind.speed * 3.6;
+            //     windMitterElement.innerHTML =
+            //         `
+            // <span class="windMitter"> ${windSpeedMiles.toFixed(3)} Kh/H </span>
+            // <div class="h6">
+            //     <img width="25"  src="img/wind.png">
+            // </div>
+            // `;
 
             let sunRiseMillisecound = weather.sys.sunrise * 1000;
             let sunRiseLocalString = new Date(sunRiseMillisecound);
             let sunRise =
                 `
-        <img width="40" height="40" src="img/sunrise.png" alt="">
-        <div class="title">${sunRiseLocalString.getHours()}:${sunRiseLocalString.getMinutes()} AM</div>
-        `;
+            <img width="40" height="40" src="img/sunrise.png" alt="">
+            <div class="title">${sunRiseLocalString.getHours()}:${sunRiseLocalString.getMinutes()} AM</div>
+            `;
             sunRiseElement.innerHTML = sunRise;
 
             let sunSetMillisecound = weather.sys.sunset * 1000;
             let sunSetLocalString = new Date(sunSetMillisecound);
             let sunSet =
                 `
-        <img width="40" height="40" src="img/sunset.png" alt="">
-        <div class="title"> ${sunSetLocalString.getHours() > 12 ? sunSetLocalString.getHours()-12 : sunSetLocalString.getHours() }:${sunSetLocalString.getMinutes()} PM</div>
+            <img width="40" height="40" src="img/sunset.png" alt="">
+            <div class="title"> ${sunSetLocalString.getHours() > 12 ? sunSetLocalString.getHours()-12 : sunSetLocalString.getHours() }:${sunSetLocalString.getMinutes()} PM</div>
 
-        `;
+            `;
             sunSetElement.innerHTML = sunSet;
+            document.getElementById('weatherTitle').innerHTML = weather.main;
             getWeatherNextFiveHours(city);
             rotateSunPostion(sunRiseLocalString, sunSetLocalString);
+
+            /**
+             * make other weather info
+             */
+            let mwinfo = `
+            <div class="weatherItem">
+                <div class="icon">
+                    <img src="img/temperature.png" alt="">
+                </div>
+                <div class="temp">
+                    27 <sup>c</sup>
+                </div>
+                <div class="title">
+                    Feels Like
+                </div>
+        
+            </div>
+            <div class="weatherItem">
+                <div class="icon">
+                    <img src="img/humidity.png" alt="">
+                </div>
+                <div class="temp">
+                    ${weather.main.humidity} %
+                </div>
+                <div class="title">
+                    Humidity
+                </div>
+        
+            </div>
+            <div class="weatherItem">
+                <div class="icon">
+                    <img src="img/wind.png" alt="">
+                </div>
+                <div class="temp">
+                    ${weather.main.pressure} hPa
+                </div>
+                <div class="title">
+                    Air Pressure
+                </div>
+        
+            </div>
+            <div class="weatherItem">
+                <div class="icon">
+                    <img src="img/eye.png" alt="">
+                </div>
+                <div class="temp">
+                    ${weather.visibility} meter
+                </div>
+                <div class="title">
+                    Visibility
+                </div>
+        
+            </div>
+        
+            <div class="weatherItem">
+                <div class="icon">
+                    <img src="img/sea.png" alt="">
+                </div>
+                <div class="temp">
+                    ${weather.main.sea_level} hPa
+                </div>
+                <div class="title">
+                    Sea Label
+                </div>
+        
+            </div>
+            <div class="weatherItem">
+                <div class="icon">
+                    <img src="img/preature.png">
+                </div>
+                <div class="temp">
+                    ${weather.wind.speed} meter/sec
+                </div>
+                <div class="title">
+                    Air Speed
+                </div>
+        
+            </div>
+            `;
+            document.getElementById("moreWeatherInfo").innerHTML = mwinfo;
+
+            /**
+             * left side main image
+             */
+            switch (weather.main) {
+                case 'Clear':
+                    document.getElementById('mainImg').innerHTML = `<img src="img/clear_sky.png">`;
+                    // todayImg = img/clear_sky.png;
+                    break;
+                case 'Clouds':
+                    document.getElementById('mainImg').innerHTML = `<img src="img/broken_cloud_sky.png">`;
+                    // todayImg = img/broken_cloud_sky.png;
+                    break;
+                case "Rain":
+                    document.getElementById('mainImg').innerHTML = `<img src="img/rain_sky.png">`;
+                    break;
+
+                default:
+                    document.getElementById('mainImg').innerHTML = `<img src="img/cloud_sky.png">`;
+                    break;
+                    // break;
+            }
 
         })
         .catch((error) => {
@@ -1737,7 +1851,7 @@ function test() {
 }
 // test();
 
-function rotateSunPostion(srt, sst) {
+async function rotateSunPostion(srt, sst) {
     // let date = new Date().getTime();
     let sr = srt.getHours() + "." + srt.getMinutes();
     let ss = sst.getHours() + "." + sst.getMinutes();
@@ -1795,10 +1909,15 @@ function rotateSunPostion(srt, sst) {
 async function getWeatherNextFiveHours(city) {
     // await getCurrentUserLatLog();
     // .then()
+
+    nextHourWeatherElement.innerHTML = spinner;
+    footerElement.innerHTML = spinner;
+
     axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city??"dhaka"}&appid=2acfc6c74c2396283f1bf3b656fc902f`)
         .then((response) => response.data)
         .then((weather) => {
             let nextDayWeather = '';
+            // let otherInfoWeather = '';
             weather.list.forEach((fw) => {
                 console.log(fw.weather[0].main);
                 let currentDate = new Date(); //today
@@ -1831,33 +1950,21 @@ async function getWeatherNextFiveHours(city) {
                     </div> 
                 
                 `;
-                    switch (fw.weather[0].main) {
-                        case 'Clear':
-                            document.getElementById('mainImg').innerHTML = `<img src="img/clear_sky.png">`;
-                            // todayImg = img/clear_sky.png;
-                            break;
-                        case 'Clouds':
-                            document.getElementById('mainImg').innerHTML = `<img src="img/broken_cloud_sky.png">`;
-                            // todayImg = img/broken_cloud_sky.png;
-                            break;
-                        case "Rain":
-                            document.getElementById('mainImg').innerHTML = `<img src="img/rain_sky.png">`;
-                            break;
-
-                        default:
-                            document.getElementById('mainImg').innerHTML = `<img src="img/cloud_sky.png">`;
-                            break;
-                            // break;
-                    }
                     // document.getElementById('mainImg').innerHTML = `<img  src="https://openweathermap.org/img/w/${fw.weather[0].icon}.png">`;
 
                     //min max weather
                     let tempMinCelcious = fw.main.temp_min - 275.14;
                     let tempMaxCelcious = fw.main.temp_max - 275.14;
                     document.getElementById('minTemp').innerHTML = tempMinCelcious.toFixed(1);
-                    document.getElementById('weatherTitle').innerHTML = fw.weather[0].main;
+
                 }
-            })
+            });
+
+
+            /**
+             * weather other information 
+             */
+
             // .setAttribute('src', "https://openweathermap.org/img/w/${fw.weather[0].icon}.png");
             nextHourWeatherElement.innerHTML = nextDayWeather;
             otherDayWeatherList = weather;
@@ -1965,7 +2072,7 @@ async function getDay() {
         if (d > 6) {
             d = 0;
         }
-        if (nextSixDayName.length > 5) {
+        if (nextSixDayName.length > 6) {
             break;
         }
         let weakDay = weakNames[d];
@@ -1986,7 +2093,7 @@ async function makeNestWatherArray() {
         if (index > 31) {
             index = 1;
         }
-        if (indexCount.length > 5) {
+        if (indexCount.length > 6) {
             break;
         }
         // console.log(index);

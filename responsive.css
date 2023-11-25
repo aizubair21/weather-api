@@ -1,0 +1,26 @@
+@media (max-width:570px) {
+    body {
+        display: block;
+        overflow-y: scroll;
+        padding: 25px 12px;
+
+        #asside_left {
+            max-width: 100% !important;
+        }
+
+        #asside_left {
+            border-radius: 0px;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
+        }
+
+        #main_app {
+            border-radius: 0px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            height: auto;
+            overflow: auto;
+        }
+
+    }
+}
