@@ -37,6 +37,7 @@ let otherDayWeatherList = '';
 let indexCount = [];
 let tempArray = [];
 let searchArray = [];
+let getSearchWeatherArray = [];
 // const descriptionElement = document.getElementById('description');
 
 const todayElement = document.getElementById("toDay");
@@ -1626,7 +1627,7 @@ async function getWeather(city) {
     await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city??"Dhaka"}&APPID=2acfc6c74c2396283f1bf3b656fc902f`)
         .then((response) => response.data)
         .then((weather) => {
-            console.log(weather.weather[0].main);
+            // console.log(weather.weather[0].main);
             // console.log(weather);
             setLocationBtn.innerHTML = weather.name;
             // searchInputElement.value = weather.name;
@@ -1638,7 +1639,7 @@ async function getWeather(city) {
                 weather: weather.weather,
                 active: false,
             };
-            localStorageFunction(localStorageObject);
+            localStorageFunction(localStorageObject, weather);
             // setTimeout(() => {
             //     showLocalStorageSearchData();
             // }, 1000);
@@ -1694,7 +1695,8 @@ async function getWeather(city) {
 
             `;
             sunSetElement.innerHTML = sunSet;
-            document.getElementById('weatherTitle').innerHTML = weather.main;
+            // console.log(weather);
+            document.getElementById('weatherTitle').innerHTML = weather.weather[0].main;
             getWeatherNextFiveHours(city);
             rotateSunPostion(sunRiseLocalString, sunSetLocalString);
 
@@ -1781,7 +1783,7 @@ async function getWeather(city) {
             /**
              * left side main image
              */
-            switch (weather.main) {
+            switch (weather.weather[0].main) {
                 case 'Clear':
                     document.getElementById('mainImg').innerHTML = `<img src="img/clear_sky.png">`;
                     // todayImg = img/clear_sky.png;

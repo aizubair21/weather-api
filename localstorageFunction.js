@@ -43,28 +43,60 @@ function showLocalStorageSearchData() {
     }
 }
 
+/**
+ * localstorage function to keep search data to localstorage
+ */
+async function localStorageFunction(searchData = null, swData = null) {
+    // console.log(searchWeather);
 
-//local storege function 
-async function localStorageFunction(searchData = null) {
-
+    /**
+     * search data
+     */
     if (!localStorage.getItem('search')) {
+
+        // search data 
         searchArray.push(searchData);
         searchData.active = true;
         localStorage.setItem('search', JSON.stringify(searchArray));
+
     } else {
-        let haveLareadyInseted = false;
+
+        let haveAlreadyInseted = false;
         searchArray = await JSON.parse(localStorage.getItem('search'));
         searchArray.forEach(rd => {
             if (rd.keyword == searchData.keyword) {
-                haveLareadyInseted = true;
+                haveAlreadyInseted = true;
             }
         });
-        if (searchData != null && !haveLareadyInseted) {
+        if (searchData != null && !haveAlreadyInseted) {
             searchArray.push(searchData);
             localStorage.setItem('search', JSON.stringify(searchArray));
             triggerActiveSearchData(searchArray.length - 1, true);
         }
+
     }
+
+    /**
+     * search weather info save to local storage
+     */
+    if (!localStorage.getItem('searchWeather')) {
+        getSearchWeatherArray.push(swData);
+        localStorage.setItem('searchWeather', JSON.stringify(getSearchWeatherArray));
+    } else {
+        let haveAlreadyInserted = false;
+        getSearchWeatherArray = await JSON.parse(localStorage.getItem(getSearchWeatherArray));
+        getSearchWeatherArray.forEach((wea) => {
+            if (wea.cityName == swData.cityName) {
+                haveAlreadyInserted = true;
+            }
+        })
+        if (swData !== undefined && !haveAlreadyInserted) {
+            getSearchWeatherArray.push(swData);
+            localStorage.setItem('searchWeather', JSON.stringify(getSearchWeatherArray))
+        }
+
+    }
+
     showLocalStorageSearchData();
     // console.log(searchData);
     // console.log(JSON.parse(localStorage.getItem('search')));
@@ -121,6 +153,6 @@ function deleteLocalStorageData(targetI) {
         localStorage.setItem("search", JSON.stringify(ld));
         showLocalStorageSearchData();
     } else {
-        alert("no data to remove")
+        alert("No data to remove")
     }
 }
